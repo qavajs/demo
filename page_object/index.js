@@ -1,4 +1,4 @@
-const { $, $$ } = require('@yaatp/po');
+const { $, $$ } = require('@qavajs/po');
 const Wikipedia = require('./Wikipedia');
 const WikipediaArticle = require('./WikipediaArticle');
 

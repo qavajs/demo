@@ -1,32 +1,32 @@
 {
-  "name": "demo",
+  "name": "@qavajs/demo",
   "version": "1.0.0",
   "description": "demo repository that demonstrates framework capabilities",
   "main": "index.js",
   "scripts": {
     "build": "npm run build-cli && npm run build-steps-config-loader && npm run build-steps-wdio",
-    "build-cli": "npm install --prefix node_modules/@yaatp/cli --legacy-peer-deps && tsc --project node_modules/@yaatp/cli && npm uninstall @cucumber/cucumber --prefix node_modules/@yaatp/cli --legacy-peer-deps",
-    "build-steps-config-loader": "npm install --prefix node_modules/@yaatp/steps-config-loader --legacy-peer-deps && tsc --project node_modules/@yaatp/steps-config-loader",
-    "build-steps-wdio": "npm install --prefix node_modules/@yaatp/steps-wdio --legacy-peer-deps && tsc --project node_modules/@yaatp/steps-wdio",
-    "test": "yaatp run --config config.js"
+    "build-cli": "npm install --prefix node_modules/@qavajs/cli && tsc --project node_modules/@qavajs/cli && npm uninstall @cucumber/cucumber --prefix node_modules/@qavajs/cli",
+    "build-steps-config-loader": "npm install --prefix node_modules/@qavajs/steps-config-loader&& tsc --project node_modules/@qavajs/steps-config-loader && npm uninstall @cucumber/cucumber --prefix node_modules/@qavajs/steps-config-loader",
+    "build-steps-wdio": "npm install --prefix node_modules/@qavajs/steps-wdio && tsc --project node_modules/@qavajs/steps-wdio && npm uninstall @cucumber/cucumber --prefix node_modules/@qavajs/steps-wdio",
+    "test": "qavajs run --config config.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yaatp/demo.git"
+    "url": "git+https://github.com/qavajs/demo.git"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/yaatp/demo/issues"
+    "url": "https://github.com/qavajs/demo/issues"
   },
-  "homepage": "https://github.com/yaatp/demo#readme",
+  "homepage": "https://github.com/qavajs/demo#readme",
   "dependencies": {
     "@cucumber/cucumber": "^8.3.0",
-    "@yaatp/cli": "https://github.com/yaatp/cli.git",
-    "@yaatp/memory": "https://github.com/yaatp/memory.git#typings",
-    "@yaatp/po": "https://github.com/yaatp/po.git#typings",
-    "@yaatp/steps-config-loader": "https://github.com/yaatp/steps-config-loader.git#ts-config",
-    "@yaatp/steps-wdio": "https://github.com/yaatp/steps-wdio.git#ts-config",
+    "@qavajs/cli": "https://github.com/qavajs/cli.git#remove-cucumber-replacer",
+    "@qavajs/memory": "^1.0.1",
+    "@qavajs/po": "^1.0.1",
+    "@qavajs/steps-config-loader": "https://github.com/qavajs/steps-config-loader.git#publish",
+    "@qavajs/steps-wdio": "https://github.com/qavajs/steps-wdio.git#ts-config",
     "typescript": "^4.7.3",
     "webdriverio": "^7.20.2"
   }
