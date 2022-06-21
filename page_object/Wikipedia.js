@@ -1,4 +1,4 @@
-const { $, $$ } = require('@yaatp/po');
+const { $, $$ } = require('@qavajs/po');
 
 class Wikipedia {
     selector = '.search-container';

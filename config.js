@@ -5,8 +5,9 @@ module.exports = {
     default: {
         paths: ["features/**/*.feature"],
         require: [
-            "node_modules/@yaatp/steps-config-loader/lib",
-            "node_modules/@yaatp/steps-wdio/lib"
+            "node_modules/@qavajs/steps-config-loader/lib",
+            "node_modules/@qavajs/steps-wdio/lib",
+            "step_definitions/*.js"
         ],
         browser: {
             logLevel: 'warn',
