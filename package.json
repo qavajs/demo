@@ -4,8 +4,7 @@
   "description": "demo repository that demonstrates framework capabilities",
   "main": "index.js",
   "scripts": {
-    "build": "npm run build-cli && npm run build-steps-config-loader && npm run build-steps-wdio",
-    "build-cli": "npm install --prefix node_modules/@qavajs/cli && tsc --project node_modules/@qavajs/cli && npm uninstall @cucumber/cucumber --prefix node_modules/@qavajs/cli",
+    "build": "npm run build-steps-config-loader && npm run build-steps-wdio",
     "build-steps-config-loader": "npm install --prefix node_modules/@qavajs/steps-config-loader&& tsc --project node_modules/@qavajs/steps-config-loader && npm uninstall @cucumber/cucumber --prefix node_modules/@qavajs/steps-config-loader",
     "build-steps-wdio": "npm install --prefix node_modules/@qavajs/steps-wdio && tsc --project node_modules/@qavajs/steps-wdio && npm uninstall @cucumber/cucumber --prefix node_modules/@qavajs/steps-wdio",
     "test": "qavajs run --config config.js"
@@ -22,7 +21,7 @@
   "homepage": "https://github.com/qavajs/demo#readme",
   "dependencies": {
     "@cucumber/cucumber": "^8.3.0",
-    "@qavajs/cli": "https://github.com/qavajs/cli.git#remove-cucumber-replacer",
+    "@qavajs/cli": "^0.0.3",
     "@qavajs/memory": "^1.0.1",
     "@qavajs/po": "^1.0.1",
     "@qavajs/steps-config-loader": "https://github.com/qavajs/steps-config-loader.git#publish",
