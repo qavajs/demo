@@ -4,8 +4,7 @@
   "description": "demo repository that demonstrates framework capabilities",
   "main": "index.js",
   "scripts": {
-    "build": "npm run build-steps-config-loader && npm run build-steps-wdio",
-    "build-steps-config-loader": "npm install --prefix node_modules/@qavajs/steps-config-loader&& tsc --project node_modules/@qavajs/steps-config-loader && npm uninstall @cucumber/cucumber --prefix node_modules/@qavajs/steps-config-loader",
+    "build": "npm run build-steps-wdio",
     "build-steps-wdio": "npm install --prefix node_modules/@qavajs/steps-wdio && tsc --project node_modules/@qavajs/steps-wdio && npm uninstall @cucumber/cucumber --prefix node_modules/@qavajs/steps-wdio",
     "test": "qavajs run --config config.js"
   },
@@ -13,7 +12,9 @@
     "type": "git",
     "url": "git+https://github.com/qavajs/demo.git"
   },
-  "author": "",
+  "authors": [
+    "Alexandr Galichenko"
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/qavajs/demo/issues"
@@ -24,7 +25,7 @@
     "@qavajs/cli": "^0.0.3",
     "@qavajs/memory": "^1.0.1",
     "@qavajs/po": "^1.0.1",
-    "@qavajs/steps-config-loader": "https://github.com/qavajs/steps-config-loader.git#publish",
+    "@qavajs/steps-config-loader": "^0.0.1",
     "@qavajs/steps-wdio": "https://github.com/qavajs/steps-wdio.git#ts-config",
     "typescript": "^4.7.3",
     "webdriverio": "^7.20.2"
