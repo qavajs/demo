@@ -21,7 +21,9 @@ module.exports = {
                 }
             }
         },
-        format: [],
+        format: [
+            "html:report/report.html"
+        ],
         memory: new Memory(),
         pageObject: new App(),
         parallel: 1,
