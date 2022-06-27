@@ -4,9 +4,13 @@
   "description": "demo repository that demonstrates framework capabilities",
   "main": "index.js",
   "scripts": {
-    "build": "npm run build-steps-wdio",
-    "build-steps-wdio": "npm install --prefix node_modules/@qavajs/steps-wdio && tsc --project node_modules/@qavajs/steps-wdio && npm uninstall @cucumber/cucumber --prefix node_modules/@qavajs/steps-wdio",
-    "test": "qavajs run --config config.js"
+    "build": "npm run build-cli && npm run build-steps-wdio && npm run build-steps-config-loader && npm run build-steps-memory",
+    "build-cli": "npm install --prefix node_modules/@qavajs/cli && tsc --project node_modules/@qavajs/cli && rimraf node_modules/@qavajs/cli/node_modules",
+    "build-steps-config-loader": "npm install --prefix node_modules/@qavajs/steps-config-loader && tsc --project node_modules/@qavajs/steps-config-loader && rimraf node_modules/@qavajs/steps-config-loader/node_modules",
+    "build-steps-wdio": "npm install --prefix node_modules/@qavajs/steps-wdio && tsc --project node_modules/@qavajs/steps-wdio && rimraf node_modules/@qavajs/steps-wdio/node_modules",
+    "build-steps-memory": "npm install --prefix node_modules/@qavajs/steps-memory && tsc --project node_modules/@qavajs/steps-memory && rimraf node_modules/@qavajs/steps-memory/node_modules",
+    "test-wdio": "qavajs run --config wdio.js",
+    "test-memory": "qavajs run --config mem.js"
   },
   "repository": {
     "type": "git",
@@ -22,12 +26,14 @@
   "homepage": "https://github.com/qavajs/demo#readme",
   "dependencies": {
     "@cucumber/cucumber": "^8.3.0",
-    "@qavajs/cli": "^0.0.3",
+    "@qavajs/cli": "https://github.com/qavajs/cli.git",
     "@qavajs/memory": "^1.0.1",
     "@qavajs/po": "^1.0.1",
-    "@qavajs/steps-config-loader": "^0.0.1",
-    "@qavajs/steps-wdio": "https://github.com/qavajs/steps-wdio.git#ts-config",
-    "typescript": "^4.7.3",
+    "@qavajs/steps-config-loader": "https://github.com/qavajs/steps-config-loader.git#common-types",
+    "@qavajs/steps-wdio": "https://github.com/qavajs/steps-wdio.git#remove-common-parameter-types",
+    "@qavajs/steps-memory": "https://github.com/qavajs/steps-memory.git#initial-branch",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.7.4",
     "webdriverio": "^7.20.2"
   }
 }

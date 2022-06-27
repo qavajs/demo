@@ -1,4 +1,4 @@
-Feature: this is test feature
+Feature: wdio test feature
 
   @wikipedia
   Scenario Outline: search in wikipedia (<term>)
@@ -7,8 +7,6 @@ Feature: this is test feature
     And I click 'Wikipedia > Search Button'
     And I expect text of 'Wikipedia Article > Title' element equals 'JavaScript'
 
-    Examples:
-      | term       |
-      | Javascript |
-#      | JavaScript |
-#      | javascript |
+    Examples: 
+      | term        |
+      | Javascript  |
