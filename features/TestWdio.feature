@@ -13,3 +13,8 @@ Feature: wdio test feature
     Examples:
       | term        |
       | Javascript  |
+
+  Scenario: wait for text
+    When I open 'http://uitestingplayground.com/progressbar' url
+    And I click 'Progress Bar Page > Start'
+    And I wait until text of 'Progress Bar Page > Bar' not to contain '2'

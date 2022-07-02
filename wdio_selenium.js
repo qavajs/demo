@@ -1,17 +1,17 @@
-const Memory = require("./memory");
-const App = require("./page_object");
+const Memory = require('./memory');
+const App = require('./page_object');
 
 module.exports = {
     default: {
         paths: ["features/TestWdio.feature"],
         require: [
-            "node_modules/@qavajs/steps-config-loader",
-            "node_modules/@qavajs/steps-wdio",
-            "step_definitions/*.js"
+            'node_modules/@qavajs/steps-config-loader',
+            'node_modules/@qavajs/steps-wdio',
+            'step_definitions/*.js'
         ],
         browser: {
             capabilities: {
-                browserName: 'firefox'
+                browserName: 'MicrosoftEdge'
             }
         },
         format: [

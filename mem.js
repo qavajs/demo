@@ -1,13 +1,13 @@
-const Memory = require("./memory");
-const App = require("./page_object");
+const Memory = require('./memory');
+const App = require('./page_object');
 
 module.exports = {
     default: {
-        paths: ["features/TestMemory.feature"],
+        paths: ['features/TestMemory.feature'],
         require: [
-            "node_modules/@qavajs/steps-config-loader",
-            "node_modules/@qavajs/steps-memory",
-            "step_definitions/*.js"
+            'node_modules/@qavajs/steps-config-loader',
+            'node_modules/@qavajs/steps-memory',
+            'step_definitions/*.js'
         ],
         browser: {
             capabilities: {
@@ -15,7 +15,7 @@ module.exports = {
             }
         },
         format: [
-            "html:report/report.html"
+            'html:report/report.html'
         ],
         memory: new Memory(),
         pageObject: new App(),
