@@ -4,9 +4,16 @@
   "description": "demo repository that demonstrates framework capabilities",
   "main": "index.js",
   "scripts": {
-    "build": "npm run build-steps-wdio",
-    "build-steps-wdio": "npm install --prefix node_modules/@qavajs/steps-wdio && tsc --project node_modules/@qavajs/steps-wdio && npm uninstall @cucumber/cucumber --prefix node_modules/@qavajs/steps-wdio",
-    "test": "qavajs run --config config.js"
+    "build": "npm run build-cli && npm run build-steps-wdio && npm run build-steps-config-loader && npm run build-steps-memory",
+    "build-cli": "npm install --prefix node_modules/@qavajs/cli && tsc --project node_modules/@qavajs/cli && rimraf node_modules/@qavajs/cli/node_modules",
+    "build-steps-config-loader": "npm install --prefix node_modules/@qavajs/steps-config-loader && tsc --project node_modules/@qavajs/steps-config-loader && rimraf node_modules/@qavajs/steps-config-loader/node_modules",
+    "build-steps-wdio": "npm install --prefix node_modules/@qavajs/steps-wdio && tsc --project node_modules/@qavajs/steps-wdio && rimraf node_modules/@qavajs/steps-wdio/node_modules",
+    "build-steps-memory": "npm install --prefix node_modules/@qavajs/steps-memory && tsc --project node_modules/@qavajs/steps-memory && rimraf node_modules/@qavajs/steps-memory/node_modules",
+    "build-steps-template": "npm install --prefix node_modules/@qavajs/steps-template && tsc --project node_modules/@qavajs/steps-template && rimraf node_modules/@qavajs/steps-template/node_modules",
+    "test-wdio": "qavajs run --config wdio.js",
+    "test-memory": "qavajs run --config mem.js",
+    "test-selenium": "qavajs run --config wdio_selenium.js",
+    "test-template": "qavajs run --config template.js"
   },
   "repository": {
     "type": "git",
@@ -21,13 +28,18 @@
   },
   "homepage": "https://github.com/qavajs/demo#readme",
   "dependencies": {
-    "@cucumber/cucumber": "^8.3.0",
-    "@qavajs/cli": "^0.0.3",
+    "@cucumber/cucumber": "^8.3.1",
+    "@qavajs/cli": "^0.0.4",
     "@qavajs/memory": "^1.0.1",
     "@qavajs/po": "^1.0.1",
-    "@qavajs/steps-config-loader": "^0.0.1",
-    "@qavajs/steps-wdio": "https://github.com/qavajs/steps-wdio.git#ts-config",
-    "typescript": "^4.7.3",
+    "@qavajs/service-selenium-standalone": "^0.0.1",
+    "@qavajs/steps-config-loader": "^0.0.3",
+    "@qavajs/steps-memory": "^0.0.2",
+    "@qavajs/steps-wdio": "^0.0.2",
+    "@qavajs/steps-template": "https://github.com/qavajs/steps-template.git#initial-branch",
+    "glob": "^8.0.3",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.7.4",
     "webdriverio": "^7.20.2"
   }
 }
