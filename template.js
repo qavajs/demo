@@ -3,12 +3,14 @@ const App = require('./page_object');
 
 module.exports = {
     default: {
-        paths: ['features/TestWdio.feature'],
+        paths: ['features/TestWdioTemplate.feature'],
         require: [
             'node_modules/@qavajs/steps-config-loader',
             'node_modules/@qavajs/steps-wdio',
-            'node_modules/@qavajs/steps-memory',
-            'step_definitions/*.js'
+            'node_modules/@qavajs/steps-template'
+        ],
+        templates: [
+            'templates/*.feature'
         ],
         browser: {
             capabilities: {
