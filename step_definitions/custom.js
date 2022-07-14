@@ -1,3 +1,14 @@
-const { setDefaultTimeout, BeforeStep, AfterStep } = require('@cucumber/cucumber');
+const { After, Before, When, setDefaultTimeout } = require('@cucumber/cucumber');
+// const defaultTimeouts= require('./defaultTimeouts');
+const { remote }= require('webdriverio');
+const { po }= require('@qavajs/po');
 
-setDefaultTimeout(30000);
+setDefaultTimeout(60000);
+
+Before(async function () {
+    global.device = global.browser;
+});
+
+When('sleep', async function() { 
+    await device.pause(5000);
+})

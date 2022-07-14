@@ -15,7 +15,8 @@
     "test-memory": "qavajs run --config mem.js",
     "test-selenium": "qavajs run --config wdio_selenium.js",
     "test-template": "qavajs run --config template.js",
-    "test-api": "qavajs run --config api.js"
+    "test-api": "qavajs run --config api.js",
+    "test-mobile-native": "qavajs run --config wdio_appium.js"
   },
   "repository": {
     "type": "git",
@@ -35,11 +36,13 @@
     "@qavajs/memory": "^1.0.1",
     "@qavajs/po": "^1.0.1",
     "@qavajs/service-selenium-standalone": "^0.0.1",
+    "@qavajs/steps-api": "^0.0.1",
     "@qavajs/steps-config-loader": "^0.0.3",
     "@qavajs/steps-memory": "^0.0.2",
     "@qavajs/steps-wdio": "^0.0.3",
-    "@qavajs/steps-api": "https://github.com/qavajs/steps-api.git",
     "@qavajs/template": "^0.0.1",
+    "@wdio/appium-service": "^7.20.3",
+    "appium": "^1.22.3",
     "glob": "^8.0.3",
     "rimraf": "^3.0.2",
     "typescript": "^4.7.4",
