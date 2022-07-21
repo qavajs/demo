@@ -5,12 +5,12 @@ module.exports = {
     default: {
         paths: ['features/TestWdio.feature'],
         require: [
-            'node_modules/@qavajs/steps-config-loader',
             'node_modules/@qavajs/steps-wdio',
             'node_modules/@qavajs/steps-memory',
             'step_definitions/*.js'
         ],
         browser: {
+            logLevel: 'warn',
             capabilities: {
                 browserName: 'chrome'
             }

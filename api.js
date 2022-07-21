@@ -4,7 +4,6 @@ module.exports = {
     default: {
         paths: ['features/TestAPI.feature'],
         require: [
-            // 'node_modules/@qavajs/steps-config-loader',
             'node_modules/@qavajs/steps-memory',
             'node_modules/@qavajs/steps-api',
             'step_definitions/*.js'

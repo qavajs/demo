@@ -5,7 +5,6 @@ module.exports = {
     default: {
         paths: ['features/TestWdioTemplate.feature'],
         require: [
-            'node_modules/@qavajs/steps-config-loader',
             'node_modules/@qavajs/steps-wdio',
             'step_definitions/*.js'
         ],
