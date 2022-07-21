@@ -1,6 +1,6 @@
 const Memory = require('./memory');
 const App = require('./page_object');
-
+const { wdioService } = require('@qavajs/cli');
 module.exports = {
     default: {
         paths: ["features/TestWdio.feature"],
