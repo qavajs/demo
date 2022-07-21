@@ -16,7 +16,7 @@ module.exports = {
         format: [
             "html:report/report.html"
         ],
-        service: ['@qavajs/service-selenium-standalone'],
+        service: [wdioService('@wdio/selenium-standalone-service')],
         memory: new Memory(),
         pageObject: new App(),
         parallel: 2,

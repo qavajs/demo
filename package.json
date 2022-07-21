@@ -44,6 +44,7 @@
     "@qavajs/template": "^0.0.1",
     "@qavajs/validation": "^0.0.1",
     "@wdio/appium-service": "^7.20.3",
+    "@wdio/selenium-standalone-service": "^7.20.7",
     "appium": "^1.22.3",
     "glob": "^8.0.3",
     "rimraf": "^3.0.2",
