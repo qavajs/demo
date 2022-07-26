@@ -10,7 +10,7 @@ module.exports = {
             'node_modules/@qavajs/steps-wdio',
             'step_definitions/*.js'
         ],
-        driver: {
+        browser: {
             timeout: {
                 present: 5000
             },
