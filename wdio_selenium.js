@@ -1,11 +1,10 @@
 const Memory = require('./memory');
 const App = require('./page_object');
-
+const { wdioService } = require('@qavajs/cli');
 module.exports = {
     default: {
         paths: ["features/TestWdio.feature"],
         require: [
-            'node_modules/@qavajs/steps-config-loader',
             'node_modules/@qavajs/steps-wdio',
             'step_definitions/*.js'
         ],
@@ -17,7 +16,7 @@ module.exports = {
         format: [
             "html:report/report.html"
         ],
-        service: ['@qavajs/service-selenium-standalone'],
+        service: [wdioService('@wdio/selenium-standalone-service')],
         memory: new Memory(),
         pageObject: new App(),
         parallel: 2,
