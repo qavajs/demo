@@ -17,7 +17,8 @@
     "test-selenium": "qavajs run --config wdio_selenium.js",
     "test-template": "qavajs run --config template.js",
     "test-api": "qavajs run --config api.js",
-    "test-mobile-native": "qavajs run --config wdio_appium.js"
+    "test-mobile-native": "qavajs run --config wdio_appium.js",
+    "test-mobile-browser": "qavajs run --config wdio_appium_browser.js"
   },
   "repository": {
     "type": "git",
@@ -46,6 +47,7 @@
     "@wdio/appium-service": "^7.20.3",
     "@wdio/selenium-standalone-service": "^7.20.7",
     "appium": "^1.22.3",
+    "chromedriver": "^83.0.1",
     "glob": "^8.0.3",
     "rimraf": "^3.0.2",
     "typescript": "^4.7.4",
