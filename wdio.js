@@ -16,7 +16,7 @@ module.exports = {
             }
         },
         format: [
-            'html:report/report.html'
+            'html:report/report.html', '@qavajs/console-formatter'
         ],
         memory: new Memory(),
         pageObject: new App(),
