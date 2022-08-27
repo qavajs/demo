@@ -9,8 +9,6 @@ Feature: Mobile Web
     And I wait until text of 'Wikipedia Article > Title' not to contain 'Python'
     And I wait until 'Wikipedia Article > Title' to be visible
     And I expect 'Wikipedia Article > Title' to be visible
-    And I save number of elements in 'Wikipedia Article > References' collection as 'value1'
-    Then I wait until number of elements in 'Wikipedia Article > References' collection to be below '109'
 
     Examples:
       | term       |

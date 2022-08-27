@@ -10,6 +10,7 @@ module.exports = {
             'node_modules/@qavajs/steps-wdio'
         ],
         browser: {
+            logLevel: 'warn',
             capabilities: {
                 browserName: 'MicrosoftEdge'
             }

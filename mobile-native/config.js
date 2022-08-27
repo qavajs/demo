@@ -7,10 +7,10 @@ module.exports = {
     default: {
         paths: ["features/TestMobile.feature"],
         require: [
-            'node_modules/@qavajs/steps-wdio',
-            'step_definitions/*.js'
+            'node_modules/@qavajs/steps-wdio'
         ],
         browser: {
+            logLevel: 'warn',
             timeout: {
                 present: 5000
             },
@@ -24,12 +24,13 @@ module.exports = {
             }
         },
         format: [
-            "html:report/report.html"
+            'html:report/report.html', '@qavajs/console-formatter', '@qavajs/xunit-formatter:report/file.xml'
         ],
         service: [wdioService('@wdio/appium-service')],
         memory: new Memory(),
         pageObject: new App(),
         parallel: 1,
+        defaultTimeout: 30000,
         publishQuiet: true
     }
 }
