@@ -5,12 +5,12 @@ module.exports = {
     default: {
         paths: ['features/*.feature'],
         require: [
-            'node_modules/@qavajs/steps-wdio', 'step_definitions/*.js'
+            'lib/*.js'
         ],
         browser: {
             logLevel: 'warn',
             capabilities: {
-                browserName: 'chrome'
+                browserName: 'chromium'
             }
         },
         format: [
@@ -18,8 +18,8 @@ module.exports = {
         ],
         memory: new Memory(),
         pageObject: new App(),
-        defaultTimeout: 20000,
-        parallel: 2,
+        parallel: 1,
+        defaultTimeout: 15000,
         publishQuiet: true
     }
 }
