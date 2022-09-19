@@ -1,0 +1,32 @@
+{
+  "name": "@qavajs/demo",
+  "version": "1.0.0",
+  "description": "demo repository that demonstrates framework capabilities",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "mkdir report",
+    "test": "qavajs run --config config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qavajs/demo.git"
+  },
+  "authors": [
+    "Alexandr Galichenko"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/qavajs/demo/issues"
+  },
+  "homepage": "https://github.com/qavajs/demo#readme",
+  "dependencies": {
+    "@cucumber/cucumber": "^8.3.1",
+    "@qavajs/cli": "^0.0.6",
+    "@qavajs/console-formatter": "^0.0.1",
+    "@qavajs/memory": "^1.0.1",
+    "@qavajs/po": "^1.0.1",
+    "@qavajs/steps-wdio": "^0.0.5",
+    "@qavajs/template": "^0.0.2",
+    "@qavajs/xunit-formatter": "^0.0.1"
+  }
+}
