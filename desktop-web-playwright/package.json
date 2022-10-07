@@ -21,9 +21,12 @@
   "homepage": "https://github.com/qavajs/demo#readme",
   "dependencies": {
     "@cucumber/cucumber": "^8.3.1",
+    "@playwright/test": "^1.26.1",
     "@qavajs/cli": "^0.0.8",
     "@qavajs/console-formatter": "^0.1.0",
     "@qavajs/memory": "^1.0.1",
+    "@qavajs/po-playwright": "^0.0.1",
+    "@qavajs/steps-playwright": "^0.0.1",
     "@qavajs/validation": "^0.0.2",
     "@qavajs/xunit-formatter": "^0.0.1",
     "playwright": "^1.25.1",

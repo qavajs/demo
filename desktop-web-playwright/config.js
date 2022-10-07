@@ -5,21 +5,28 @@ module.exports = {
     default: {
         paths: ['features/*.feature'],
         require: [
-            'lib/*.js'
+            'node_modules/@qavajs/steps-playwright'
         ],
         browser: {
             logLevel: 'warn',
+            timeout: {
+                page: 5000
+            },
             capabilities: {
-                browserName: 'chromium'
+                browserName: 'chromium',
+                headless: false
             }
         },
         format: [
-            'html:report/report.html', '@qavajs/console-formatter', '@qavajs/xunit-formatter:report/file.xml'
+            'json:report/report.json',
+            'html:report/report.html',
+            '@qavajs/console-formatter',
+            '@qavajs/xunit-formatter:report/file.xml'
         ],
         memory: new Memory(),
         pageObject: new App(),
         parallel: 1,
-        defaultTimeout: 15000,
+        defaultTimeout: 25000,
         publishQuiet: true
     }
 }
