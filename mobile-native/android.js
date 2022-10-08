@@ -5,7 +5,7 @@ const { wdioService } = require('@qavajs/cli');
 
 module.exports = {
     default: {
-        paths: ["features/TestMobile.feature"],
+        paths: ['features/TestMobile.feature'],
         require: [
             'node_modules/@qavajs/steps-wdio'
         ],
