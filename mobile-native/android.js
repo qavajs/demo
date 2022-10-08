@@ -1,5 +1,5 @@
 const Memory = require('./memory');
-const App = require('./page_object/MobileApp');
+const App = require('./page_object/AndroidApp');
 const { join } = require('path');
 const { wdioService } = require('@qavajs/cli');
 

@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "postinstall": "mkdir report",
-    "test": "qavajs run --config config.js"
+    "test:android": "qavajs run --config android.js",
+    "test:ios": "qavajs run --config ios.js"
   },
   "repository": {
     "type": "git",
@@ -29,6 +30,7 @@
     "@qavajs/xunit-formatter": "^0.0.1",
     "@wdio/appium-service": "^7.20.3",
     "appium": "^1.22.3",
-    "chromedriver": "^83.0.1"
+    "chromedriver": "^83.0.1",
+    "start-ios-simulator": "^1.0.1"
   }
 }
