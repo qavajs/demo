@@ -3,11 +3,9 @@ const App = require('./page_object');
 const { wdioService } = require('@qavajs/cli');
 module.exports = {
     default: {
-        paths: [
-            'node_modules/@qavajs/steps-wdio', 'step_definitions/*.js'
-        ],
+        paths: ['features/*.feature'],
         require: [
-            'node_modules/@qavajs/steps-wdio'
+            'node_modules/@qavajs/steps-wdio', 'step_definitions/*.js'
         ],
         browser: {
             logLevel: 'warn',
@@ -21,6 +19,7 @@ module.exports = {
         service: [wdioService('@wdio/selenium-standalone-service')],
         memory: new Memory(),
         pageObject: new App(),
+        defaultTimeout: 20000,
         parallel: 2,
         publishQuiet: true
     }

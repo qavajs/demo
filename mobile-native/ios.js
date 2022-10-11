@@ -1,11 +1,11 @@
 const Memory = require('./memory');
-const App = require('./page_object/MobileApp');
+const App = require('./page_object/IOSApp');
 const { join } = require('path');
 const { wdioService } = require('@qavajs/cli');
 
 module.exports = {
     default: {
-        paths: ["features/TestMobile.feature"],
+        paths: ['features/TestMobile.feature'],
         require: [
             'node_modules/@qavajs/steps-wdio'
         ],
@@ -16,10 +16,15 @@ module.exports = {
             },
             port: 4723,
             capabilities: {
-                platformName: 'Android',
-                'appium:automationName': 'UiAutomator2',
-                'appium:app': join(process.cwd(), './apps/Android-NativeDemoApp-0.4.0.apk'),
-                'appium:appWaitActivity': 'com.wdiodemoapp.MainActivity',
+                platformName: 'iOS',
+                'appium:deviceName': 'iPhone 13',
+                'appium:platformVersion': '15.5',
+                'appium:orientation': 'PORTRAIT',
+                'appium:automationName': 'XCUITest',
+                'appium:app': join(
+                    process.cwd(),
+                    './apps/wdioNativeDemoApp.app'
+                ),
                 'appium:newCommandTimeout': 240,
             }
         },
@@ -30,7 +35,7 @@ module.exports = {
         memory: new Memory(),
         pageObject: new App(),
         parallel: 1,
-        defaultTimeout: 30000,
+        defaultTimeout: 60000,
         publishQuiet: true
     }
 }

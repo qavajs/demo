@@ -21,11 +21,11 @@
   "homepage": "https://github.com/qavajs/demo#readme",
   "dependencies": {
     "@cucumber/cucumber": "^8.3.1",
-    "@qavajs/cli": "^0.0.6",
-    "@qavajs/console-formatter": "^0.0.1",
+    "@qavajs/cli": "^0.0.8",
+    "@qavajs/console-formatter": "^0.1.0",
     "@qavajs/memory": "^1.0.1",
     "@qavajs/steps-api": "^0.0.3",
-    "@qavajs/steps-memory": "^0.0.4",
+    "@qavajs/steps-memory": "^0.0.5",
     "@qavajs/xunit-formatter": "^0.0.1"
   }
 }

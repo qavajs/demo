@@ -7,6 +7,7 @@ Feature: Desktop Web Feature
     And I click 'Wikipedia > Search Button'
     And I expect text of 'Wikipedia Article > Title' equals '<term>'
     And I wait until text of 'Wikipedia Article > Title' not to contain 'Python'
+    And I wait until 'Wikipedia Article > Title' to be visible
     And I expect 'Wikipedia Article > Title' to be visible
 
     Examples:
