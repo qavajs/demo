@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "postinstall": "mkdir report",
-    "test:android": "qavajs run --config config.js",
-    "test:ios": "qavajs run --config ios.js"
+    "test:mobitru": "qavajs run --config config.js"
   },
   "repository": {
     "type": "git",
