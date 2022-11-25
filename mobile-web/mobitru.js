@@ -1,7 +1,5 @@
 const Memory = require('./memory');
 const App = require('./page_object');
-const { resolve } = require('path');
-const { wdioService } = require('@qavajs/cli');
 const API_KEY = process.env.API_KEY;
 const encodeKey = encodeURIComponent(API_KEY);
 const PROJECT_NAME = process.env.PROJECT_NAME;
@@ -12,14 +10,6 @@ const RP_TOKEN = process.env.RP_TOKEN;
 const RP_ENDPOINT = process.env.RP_ENDPOINT;
 const RP_PROJECT = process.env.RP_PROJECT;
 const RP_LAUNCH = process.env.RP_LAUNCH;
-const appiumConfig = wdioService([
-    '@wdio/appium-service',
-    {
-        args: {
-            chromedriverExecutable: resolve('node_modules/chromedriver/lib/chromedriver/chromedriver.exe')
-        }
-    }
-])
 module.exports = {
     default: {
         paths: ["features/Wikipedia.feature"],
@@ -55,7 +45,6 @@ module.exports = {
                 launch: RP_LAUNCH
             },
         },
-        service: [appiumConfig],
         memory: new Memory(),
         pageObject: new App(),
         parallel: 1,
