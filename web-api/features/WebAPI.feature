@@ -8,7 +8,7 @@ Feature: API
       | id        |
       | title     |
       | completed |
-    Then I expect '$response.payload.userId' equals '$number(1)'
-    Then I expect '$response.payload.id' equals '$number(1)'
+    Then I expect '$response.payload.userId' equals '1'
+    Then I expect '$response.payload.id' equals '1'
     Then I expect '$response.payload.title' equals 'delectus aut autem'
     Then I expect '$response.payload.completed' equals '$boolean("false")'

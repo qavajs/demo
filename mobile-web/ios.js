@@ -36,7 +36,9 @@ module.exports = {
 
         },
         format: [
-            'html:report/report.html', '@qavajs/console-formatter', '@qavajs/xunit-formatter:report/file.xml'
+            '@qavajs/html-formatter:report/report.html',
+            '@qavajs/console-formatter',
+            '@qavajs/xunit-formatter:report/file.xml'
         ],
         service: [appiumConfig],
         memory: new Memory(),

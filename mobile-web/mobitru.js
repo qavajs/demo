@@ -33,7 +33,10 @@ module.exports = {
 
         },
         format: [
-            'html:report/report.html', '@qavajs/console-formatter', '@qavajs/xunit-formatter:report/file.xml', '@qavajs/format-report-portal'
+            '@qavajs/html-formatter:report/report.html',
+            '@qavajs/console-formatter',
+            '@qavajs/xunit-formatter:report/file.xml',
+            '@qavajs/format-report-portal'
         ],
         formatOptions: {
             rpConfig: {

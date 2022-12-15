@@ -7,7 +7,9 @@ module.exports = {
             'node_modules/@qavajs/steps-memory'
         ],
         format: [
-            'html:report/report.html', '@qavajs/console-formatter', '@qavajs/xunit-formatter:report/file.xml'
+            '@qavajs/html-formatter:report/report.html',
+            '@qavajs/console-formatter',
+            '@qavajs/xunit-formatter:report/report.xml'
         ],
         memory: new Memory(),
         parallel: 2,
