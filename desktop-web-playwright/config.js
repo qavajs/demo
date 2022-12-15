@@ -19,9 +19,9 @@ module.exports = {
         },
         format: [
             'json:report/report.json',
-            'html:report/report.html',
+            '@qavajs/html-formatter:report/report.html',
             '@qavajs/console-formatter',
-            '@qavajs/xunit-formatter:report/file.xml'
+            '@qavajs/xunit-formatter:report/report.xml'
         ],
         memory: new Memory(),
         pageObject: new App(),

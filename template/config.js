@@ -20,9 +20,10 @@ module.exports = {
             }
         },
         format: [
-            'html:report/report.html',
+            '@qavajs/html-formatter:report/report.html',
             '@qavajs/console-formatter'
         ],
+        defaultTimeout: 30000,
         memory: new Memory(),
         pageObject: new App(),
         parallel: 2,

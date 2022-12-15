@@ -8,7 +8,7 @@ module.exports = {
             'node_modules/@qavajs/steps-api'
         ],
         format: [
-            'html:report/report.html',
+            '@qavajs/html-formatter:report/report.html',
             '@qavajs/console-formatter'
         ],
         memory: new Memory(),

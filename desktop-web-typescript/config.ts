@@ -5,7 +5,8 @@ module.exports = {
     default: {
         paths: ['features/*.feature'],
         require: [
-            'node_modules/@qavajs/steps-wdio', 'step_definitions/*.ts'
+            'node_modules/@qavajs/steps-wdio',
+            'step_definitions/*.ts'
         ],
         browser: {
             logLevel: 'warn',
@@ -14,7 +15,9 @@ module.exports = {
             }
         },
         format: [
-            'html:report/report.html', '@qavajs/console-formatter', '@qavajs/xunit-formatter:report/file.xml'
+            '@qavajs/html-formatter:report/report.html',
+            '@qavajs/console-formatter',
+            '@qavajs/xunit-formatter:report/report.xml'
         ],
         memory: new Memory(),
         pageObject: new App(),

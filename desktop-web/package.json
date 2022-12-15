@@ -4,7 +4,7 @@
   "description": "demo repository that demonstrates framework capabilities",
   "main": "index.js",
   "scripts": {
-    "postinstall": "mkdir report",
+    "postinstall": "mkdir -p report",
     "test:devtools": "qavajs run --config devtools.js",
     "test:selenium": "qavajs run --config selenium.js"
   },
@@ -22,12 +22,13 @@
   "homepage": "https://github.com/qavajs/demo#readme",
   "dependencies": {
     "@cucumber/cucumber": "^8.9.0",
-    "@qavajs/cli": "^0.0.11",
+    "@qavajs/cli": "^0.0.13",
     "@qavajs/console-formatter": "^0.1.2",
-    "@qavajs/memory": "^1.0.1",
+    "@qavajs/html-formatter": "^0.0.2",
+    "@qavajs/memory": "^1.1.1",
     "@qavajs/po": "^1.0.1",
-    "@qavajs/steps-wdio": "^0.0.11",
+    "@qavajs/steps-wdio": "^0.0.14",
     "@qavajs/xunit-formatter": "^0.0.3",
-    "@wdio/selenium-standalone-service": "^7.26.0"
+    "@wdio/selenium-standalone-service": "^8.0.13"
   }
 }
