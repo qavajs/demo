@@ -21,7 +21,7 @@
   "homepage": "https://github.com/qavajs/demo#readme",
   "dependencies": {
     "@cucumber/cucumber": "^8.10.0",
-    "@qavajs/cli": "^0.0.15",
+    "@qavajs/cli": "^0.0.17",
     "@qavajs/console-formatter": "^0.1.2",
     "@qavajs/html-formatter": "^0.0.6",
     "@qavajs/memory": "^1.1.1",
