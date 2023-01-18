@@ -8,6 +8,7 @@
     "test:devtools": "qavajs run --config devtools.js",
     "test:selenium": "qavajs run --config selenium.js"
   },
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/qavajs/demo.git"

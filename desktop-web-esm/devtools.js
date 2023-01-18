@@ -1,11 +1,10 @@
-import Memory from './memory';
-import App from './page_object';
+import Memory from './memory/index.js';
+import App from './page_object/index.js';
 
 export default {
     paths: ['features/*.feature'],
-    require: [
-        'node_modules/@qavajs/steps-wdio',
-        'step_definitions/*.ts'
+    import: [
+        'node_modules/@qavajs/steps-wdio', 'step_definitions/*.js'
     ],
     browser: {
         logLevel: 'warn',
@@ -14,12 +13,13 @@ export default {
         }
     },
     format: [
-        '@qavajs/html-formatter:report/report.html',
         '@qavajs/console-formatter',
-        '@qavajs/xunit-formatter:report/report.xml'
+        '@qavajs/xunit-formatter:report/report.xml',
+        '@qavajs/html-formatter:report/report.html'
     ],
     memory: new Memory(),
     pageObject: new App(),
+    defaultTimeout: 20000,
     parallel: 2,
     publishQuiet: true
 }
