@@ -5,7 +5,7 @@ module.exports = {
     default: {
         paths: ['features/Template.feature'],
         require: [
-            'node_modules/@qavajs/steps-wdio'
+            'node_modules/@qavajs/steps-wdio/index.js'
         ],
         requireModule: [
             '@qavajs/template'

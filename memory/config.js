@@ -4,7 +4,7 @@ module.exports = {
     default: {
         paths: ['features/*.feature'],
         require: [
-            'node_modules/@qavajs/steps-memory'
+            'node_modules/@qavajs/steps-memory/index.js'
         ],
         format: [
             '@qavajs/html-formatter:report/report.html',

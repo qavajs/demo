@@ -5,7 +5,7 @@ import { wdioService } from '@qavajs/cli';
 export default {
     paths: ['features/*.feature'],
     import: [
-        'node_modules/@qavajs/steps-wdio',
+        'node_modules/@qavajs/steps-wdio/index.js',
         'step_definitions/*.js'
     ],
     browser: {

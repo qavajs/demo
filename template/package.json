@@ -4,7 +4,7 @@
   "description": "demo repository that demonstrates framework capabilities",
   "main": "index.js",
   "scripts": {
-    "postinstall": "mkdir -p report",
+    "postinstall": "node -e 'const fs = require(\"fs\"); !fs.existsSync(\"./report\") && fs.mkdirSync(\"./report\")'",
     "test": "qavajs run --config config.js"
   },
   "repository": {
@@ -20,14 +20,14 @@
   },
   "homepage": "https://github.com/qavajs/demo#readme",
   "dependencies": {
-    "@cucumber/cucumber": "^9.0.0",
-    "@qavajs/cli": "^0.0.18",
-    "@qavajs/console-formatter": "^0.1.2",
+    "@cucumber/cucumber": "^9.0.1",
+    "@qavajs/cli": "^0.0.19",
+    "@qavajs/console-formatter": "^0.2.1",
     "@qavajs/memory": "^1.2.0",
-    "@qavajs/po": "^1.2.0",
-    "@qavajs/steps-wdio": "^0.0.21",
-    "@qavajs/template": "^0.0.5",
+    "@qavajs/po": "^1.3.0",
+    "@qavajs/steps-wdio": "^0.0.23",
+    "@qavajs/template": "^0.0.6",
     "@qavajs/xunit-formatter": "^0.0.3",
-    "@qavajs/html-formatter": "^0.0.7"
+    "@qavajs/html-formatter": "^0.0.9"
   }
 }
