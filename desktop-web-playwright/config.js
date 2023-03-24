@@ -5,7 +5,7 @@ module.exports = {
     default: {
         paths: ['features/*.feature'],
         require: [
-            'node_modules/@qavajs/steps-playwright'
+            'node_modules/@qavajs/steps-playwright/index.js'
         ],
         browser: {
             logLevel: 'warn',

@@ -4,7 +4,7 @@ import App from './page_object';
 export default {
     paths: ['features/*.feature'],
     require: [
-        'node_modules/@qavajs/steps-wdio',
+        'node_modules/@qavajs/steps-wdio/index.js',
         'step_definitions/*.ts'
     ],
     browser: {

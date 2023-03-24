@@ -4,8 +4,8 @@ module.exports = {
     default: {
         paths: ['features/WebAPI.feature'],
         require: [
-            'node_modules/@qavajs/steps-memory',
-            'node_modules/@qavajs/steps-api'
+            'node_modules/@qavajs/steps-memory/index.js',
+            'node_modules/@qavajs/steps-api/index.js'
         ],
         format: [
             '@qavajs/html-formatter:report/report.html',

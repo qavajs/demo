@@ -14,7 +14,7 @@ module.exports = {
     default: {
         paths: ["features/Wikipedia.feature"],
         require: [
-            'node_modules/@qavajs/steps-wdio'
+            'node_modules/@qavajs/steps-wdio/index.js'
         ],
         browser: {
             protocol: 'https',

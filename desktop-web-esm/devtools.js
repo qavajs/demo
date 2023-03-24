@@ -4,7 +4,7 @@ import App from './page_object/index.js';
 export default {
     paths: ['features/*.feature'],
     import: [
-        'node_modules/@qavajs/steps-wdio', 'step_definitions/*.js'
+        'node_modules/@qavajs/steps-wdio/index.js', 'step_definitions/*.js'
     ],
     browser: {
         logLevel: 'warn',
