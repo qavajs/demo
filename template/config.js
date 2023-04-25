@@ -16,7 +16,10 @@ module.exports = {
         browser: {
             logLevel: 'warn',
             capabilities: {
-                browserName: 'chrome'
+                browserName: 'chrome',
+                'goog:chromeOptions': {
+                    args: ['--headless']
+                }
             }
         },
         format: [
@@ -24,6 +27,7 @@ module.exports = {
             '@qavajs/console-formatter'
         ],
         defaultTimeout: 30000,
+        screenshot: ['onFail'],
         memory: new Memory(),
         pageObject: new App(),
         parallel: 2,

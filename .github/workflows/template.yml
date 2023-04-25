@@ -1,4 +1,4 @@
-name: Playwright
+name: Template
 
 on:
   workflow_dispatch:
@@ -12,19 +12,19 @@ jobs:
         with:
           node-version: 18
       - name: install modules
-        working-directory: ./desktop-web-playwright
+        working-directory: ./template
         run: npm ci
       - name: execute tests
-        working-directory: ./desktop-web-playwright
+        working-directory: ./template
         run: npm run test
       - name: report artifact
         uses: actions/upload-artifact@v3
         with:
           name: report
-          path: desktop-web-playwright/report/report.html
+          path: template/report/report.html
       - name: junit report
         uses: mikepenz/action-junit-report@v3
         if: always()
         with:
-          report_paths: desktop-web-playwright/report/report.xml
+          report_paths: template/report/report.xml
           fail_on_failure: true
