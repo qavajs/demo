@@ -11,7 +11,10 @@ module.exports = {
         browser: {
             logLevel: 'warn',
             capabilities: {
-                browserName: 'chrome'
+                browserName: 'chrome',
+                args: [
+                    '--headless'
+                ]
             }
         },
         format: [
