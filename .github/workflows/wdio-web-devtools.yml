@@ -11,9 +11,11 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 18
-      - run: cd desktop-web
-      - run: npm ci
-      - run: npm run build
+      - name: install modules
+        working-directory: ./desktop-web
+        run: npm ci
+      - name: execute tests
+        working-directory: ./desktop-web
       - run: npm run test:devtools
       - name: junit report
         uses: mikepenz/action-junit-report@v3
