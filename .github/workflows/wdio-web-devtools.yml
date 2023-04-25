@@ -1,0 +1,23 @@
+name: WebdriverIO Web
+
+on:
+  workflow-dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      - run: cd desktop-web
+      - run: npm ci
+      - run: npm run build
+      - run: npm run test:devtools
+      - name: junit report
+        uses: mikepenz/action-junit-report@v3
+        if: always()
+        with:
+          report_paths: './report/report.xml'
+          fail_on_failure: true
