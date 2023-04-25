@@ -1,7 +1,7 @@
 name: WebdriverIO Web
 
 on:
-  workflow-dispatch:
+  workflow_dispatch:
 
 jobs:
   test:
