@@ -1,4 +1,4 @@
-name: WebdriverIO Web Devtools
+name: WebdriverIO Web Selenium
 
 on:
   workflow_dispatch:
@@ -16,7 +16,7 @@ jobs:
         run: npm ci
       - name: execute tests
         working-directory: ./desktop-web
-        run: npm run test:devtools
+        run: npm run test:selenium
       - name: report artifact
         uses: actions/upload-artifact@v3
         with:
