@@ -16,7 +16,7 @@ jobs:
         run: npm ci
       - name: execute tests
         working-directory: ./desktop-web
-      - run: npm run test:devtools
+        run: npm run test:devtools
       - name: junit report
         uses: mikepenz/action-junit-report@v3
         if: always()
