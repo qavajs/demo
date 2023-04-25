@@ -1,5 +1,5 @@
-const Memory = require('../desktop-web/memory');
-const App = require('../desktop-web/page_object');
+const Memory = require('./memory');
+const App = require('./page_object');
 
 module.exports = {
     default: {
