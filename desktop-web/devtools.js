@@ -12,9 +12,9 @@ module.exports = {
             logLevel: 'warn',
             capabilities: {
                 browserName: 'chrome',
-                args: [
-                    '--headless'
-                ]
+                'goog:chromeOptions': {
+                    args: ['--headless']
+                }
             }
         },
         format: [
@@ -25,6 +25,7 @@ module.exports = {
         memory: new Memory(),
         pageObject: new App(),
         defaultTimeout: 20000,
+        screenshot: ['onFail'],
         parallel: 2,
         publishQuiet: true
     }

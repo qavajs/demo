@@ -17,9 +17,14 @@ jobs:
       - name: execute tests
         working-directory: ./desktop-web
         run: npm run test:devtools
+      - name: report artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: report
+          path: desktop-web/report/report.html
       - name: junit report
         uses: mikepenz/action-junit-report@v3
         if: always()
         with:
-          report_paths: './desktop-web/report/report.xml'
+          report_paths: desktop-web/report/report.xml
           fail_on_failure: true
