@@ -24,6 +24,7 @@ module.exports = {
         },
         format: [
             '@qavajs/html-formatter:report/report.html',
+            '@qavajs/xunit-formatter:report/report.xml',
             '@qavajs/console-formatter'
         ],
         defaultTimeout: 30000,
