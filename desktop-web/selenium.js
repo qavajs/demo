@@ -12,9 +12,9 @@ module.exports = {
             logLevel: 'warn',
             capabilities: {
                 browserName: 'chrome',
-                args: [
-                    '--headless'
-                ]
+                'goog:chromeOptions': {
+                    args: ['--headless']
+                }
             }
         },
         format: [
@@ -25,7 +25,8 @@ module.exports = {
         service: [wdioService('@wdio/selenium-standalone-service')],
         memory: new Memory(),
         pageObject: new App(),
-        defaultTimeout: 20000,
+        defaultTimeout: 40000,
+        screenshot: ['onFail'],
         parallel: 2,
         publishQuiet: true
     }
