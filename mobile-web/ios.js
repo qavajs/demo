@@ -1,20 +1,10 @@
 const Memory = require('./memory');
 const App = require('./page_object');
-const { resolve } = require('path');
-const { wdioService } = require('@qavajs/cli');
-
-const appiumConfig = wdioService([
-    '@wdio/appium-service',
-    {
-        args: {
-            chromedriverExecutable: resolve('node_modules/chromedriver/lib/chromedriver/chromedriver.exe')
-        }
-    }
-])
+const wdioService = require('@qavajs/wdio-service-adapter');
 
 module.exports = {
     default: {
-        paths: ["features/Wikipedia.feature"],
+        paths: ['features/Wikipedia.feature'],
         require: [
             'node_modules/@qavajs/steps-wdio/index.js'
         ],
@@ -27,8 +17,8 @@ module.exports = {
             capabilities: {
                 platformName: 'iOS',
                 browserName: 'safari',
-                'appium:deviceName': 'iPhone 13',
-                'appium:platformVersion': '15.5',
+                'appium:deviceName': 'iPhone 14',
+                'appium:platformVersion': '16.4',
                 'appium:orientation': 'PORTRAIT',
                 'appium:automationName': 'XCUITest',
                 'appium:newCommandTimeout': 240
@@ -40,7 +30,6 @@ module.exports = {
             '@qavajs/console-formatter',
             '@qavajs/xunit-formatter:report/file.xml'
         ],
-        service: [appiumConfig],
         memory: new Memory(),
         pageObject: new App(),
         parallel: 1,

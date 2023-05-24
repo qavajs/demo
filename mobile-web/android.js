@@ -1,7 +1,7 @@
 const Memory = require('./memory');
 const App = require('./page_object');
 const { resolve } = require('path');
-const { wdioService } = require('@qavajs/cli');
+const wdioService = require('@qavajs/wdio-service-adapter');
 
 const appiumConfig = wdioService([
     '@wdio/appium-service',
@@ -35,7 +35,6 @@ module.exports = {
             '@qavajs/console-formatter',
             '@qavajs/xunit-formatter:report/file.xml'
         ],
-        service: [appiumConfig],
         memory: new Memory(),
         pageObject: new App(),
         parallel: 1,

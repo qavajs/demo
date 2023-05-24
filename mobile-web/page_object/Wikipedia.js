@@ -1,8 +1,6 @@
-const { $, $$ } = require('@qavajs/po');
+const { $, $$, Component } = require('@qavajs/po');
 
-class Wikipedia {
-    selector = '.search-container';
-
+class Wikipedia extends Component {
     SearchInput = $('#searchInput');
     SearchButton = $('button[type=submit]');
 }

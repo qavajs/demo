@@ -1,8 +1,6 @@
-const { $, $$ } = require('@qavajs/po');
+const { $, $$, Component } = require('@qavajs/po');
 
-class WikipediaArticle {
-    selector = '#content';
-
+class WikipediaArticle extends Component {
     Title = $('#firstHeading');
     References = $$('.references li')
 }

@@ -1,7 +1,7 @@
 const Memory = require('./memory');
 const App = require('./page_object/IOSApp');
 const { join } = require('path');
-const { wdioService } = require('@qavajs/cli');
+const wdioService = require('@qavajs/wdio-service-adapter');
 
 module.exports = {
     default: {
@@ -14,11 +14,12 @@ module.exports = {
             timeout: {
                 present: 5000
             },
+            path: '/',
             port: 4723,
             capabilities: {
                 platformName: 'iOS',
-                'appium:deviceName': 'iPhone 13',
-                'appium:platformVersion': '15.5',
+                'appium:deviceName': 'iPhone 14',
+                'appium:platformVersion': '16.4',
                 'appium:orientation': 'PORTRAIT',
                 'appium:automationName': 'XCUITest',
                 'appium:app': join(
@@ -33,7 +34,6 @@ module.exports = {
             '@qavajs/console-formatter',
             '@qavajs/xunit-formatter:report/file.xml'
         ],
-        service: [wdioService('@wdio/appium-service')],
         memory: new Memory(),
         pageObject: new App(),
         parallel: 1,
