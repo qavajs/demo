@@ -1,4 +1,4 @@
-name: WebdriverIO Web Devtools
+name: TestCafe
 
 on:
   workflow_dispatch:
