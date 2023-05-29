@@ -16,7 +16,7 @@ jobs:
         run: npm ci
       - name: execute tests
         working-directory: ./testcafe
-        run: npm run test:devtools
+        run: npm run test
       - name: report artifact
         uses: actions/upload-artifact@v3
         with:
