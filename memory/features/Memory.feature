@@ -13,5 +13,7 @@ Feature: Memory
     Then I expect '$value1' does not contain '$value3'
 
   Scenario: math expression
-    When I save result of math expression '{$value1} / 2' as 'result'
-    Then I expect '$result' equals '$number(21)'
+    When I save '$js($value1 / 2)' to memory as 'result1'
+    When I save result of math expression '{$value1} / 2' as 'result2'
+    Then I expect '$result1' equals '21'
+    Then I expect '$result2' equals '21'
