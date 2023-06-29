@@ -1,4 +1,4 @@
-name: TestCafe
+name: Cypress
 
 on:
   workflow_dispatch:
