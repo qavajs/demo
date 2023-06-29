@@ -1,0 +1,22 @@
+{
+  "name": "qavajs-cypress-demo",
+  "version": "1.0.0",
+  "description": "qavajs-cypress-demo",
+  "main": " ",
+  "scripts": {
+    "debug": "cypress open",
+    "test": "cypress run"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^18.0.1",
+    "@cypress/webpack-preprocessor": "^5.17.1",
+    "@qavajs/memory": "^1.5.1",
+    "@qavajs/po-cypress": "^0.1.0",
+    "@qavajs/steps-cypress": "^0.1.0",
+    "cypress": "^12.16.0",
+    "ts-loader": "^9.4.4",
+    "typescript": "^5.1.6"
+  }
+}
