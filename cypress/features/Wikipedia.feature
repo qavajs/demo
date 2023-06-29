@@ -1,4 +1,4 @@
-Feature: Desktop Web Feature
+Feature: Cypress Feature
 
   @wikipedia
   Scenario Outline: Search in wikipedia (<term>)
