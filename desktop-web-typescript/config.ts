@@ -18,6 +18,11 @@ export default {
         '@qavajs/console-formatter',
         '@qavajs/xunit-formatter:report/report.xml'
     ],
+    formatOptions: {
+        console: {
+            showLogs: true
+        }
+    },
     memory: new Memory(),
     pageObject: new App(),
     parallel: 2,

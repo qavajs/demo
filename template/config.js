@@ -27,6 +27,11 @@ module.exports = {
             '@qavajs/xunit-formatter:report/report.xml',
             '@qavajs/console-formatter'
         ],
+        formatOptions: {
+            console: {
+                showLogs: true
+            }
+        },
         defaultTimeout: 30000,
         screenshot: ['onFail'],
         memory: new Memory(),

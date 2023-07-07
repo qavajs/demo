@@ -1,6 +1,6 @@
 import Memory from './memory/index.js';
 import App from './page_object/index.js';
-import { wdioService } from '@qavajs/cli';
+import wdioService from '@qavajs/wdio-service-adapter';
 
 export default {
     paths: ['features/*.feature'],
@@ -19,7 +19,12 @@ export default {
         '@qavajs/xunit-formatter:report/report.xml',
         '@qavajs/html-formatter:report/report.html'
     ],
-    service: [wdioService('@wdio/selenium-standalone-service')],
+    formatOptions: {
+        console: {
+            showLogs: true
+        }
+    },
+    service: [await wdioService('@wdio/selenium-standalone-service')],
     memory: new Memory(),
     pageObject: new App(),
     defaultTimeout: 20000,

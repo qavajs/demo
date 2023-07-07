@@ -11,6 +11,11 @@ module.exports = {
             '@qavajs/html-formatter:report/report.html',
             '@qavajs/console-formatter'
         ],
+        formatOptions: {
+            console: {
+                showLogs: true
+            }
+        },
         memory: new Memory(),
         parallel: 2,
         publishQuiet: true
