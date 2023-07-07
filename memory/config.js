@@ -11,6 +11,11 @@ module.exports = {
             '@qavajs/console-formatter',
             '@qavajs/xunit-formatter:report/report.xml'
         ],
+        formatOptions: {
+            console: {
+                showLogs: true
+            }
+        },
         memory: new Memory(),
         parallel: 2,
         publishQuiet: true

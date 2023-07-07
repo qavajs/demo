@@ -16,6 +16,11 @@ module.exports = {
                 browserName: 'chromium'
             }
         },
+        formatOptions: {
+            console: {
+                showLogs: true
+            }
+        },
         format: [
             'json:report/report.json',
             '@qavajs/html-formatter:report/report.html',

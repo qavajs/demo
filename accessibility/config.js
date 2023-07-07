@@ -29,6 +29,11 @@ module.exports = {
         axe: function (axe) {
             return axe.withTags('wcag2a')
         },
+        formatOptions: {
+            console: {
+                showLogs: true
+            }
+        },
         parallel: 1,
         defaultTimeout: 25000,
         publishQuiet: true

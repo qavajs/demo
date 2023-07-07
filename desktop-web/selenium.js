@@ -22,6 +22,11 @@ module.exports = {
             '@qavajs/xunit-formatter:report/report.xml',
             '@qavajs/html-formatter:report/report.html'
         ],
+        formatOptions: {
+            console: {
+                showLogs: true
+            }
+        },
         service: [wdioService('@wdio/selenium-standalone-service')],
         memory: new Memory(),
         pageObject: new App(),
