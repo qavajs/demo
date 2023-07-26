@@ -10,7 +10,10 @@ export default {
     browser: {
         logLevel: 'warn',
         capabilities: {
-            browserName: 'chrome'
+            browserName: 'chrome',
+            'goog:chromeOptions': {
+                args: ['--headless']
+            }
         }
     },
     format: [

@@ -4,9 +4,7 @@
   "description": "demo repository that demonstrates framework capabilities",
   "main": "index.js",
   "scripts": {
-    "postinstall": "node -e 'const fs = require(\"fs\"); !fs.existsSync(\"./report\") && fs.mkdirSync(\"./report\")'",
-    "test:devtools": "qavajs run --config devtools.js",
-    "test:selenium": "qavajs run --config selenium.js"
+    "test": "qavajs run --config config.js"
   },
   "repository": {
     "type": "git",
@@ -21,16 +19,14 @@
   },
   "homepage": "https://github.com/qavajs/demo#readme",
   "dependencies": {
-    "@cucumber/cucumber": "^9.2.0",
+    "@cucumber/cucumber": "^9.3.0",
     "@qavajs/cli": "^0.27.0",
-    "@qavajs/console-formatter": "^0.4.0",
+    "@qavajs/console-formatter": "^0.5.0",
     "@qavajs/html-formatter": "^0.13.0",
-    "@qavajs/memory": "^1.6.0",
-    "@qavajs/po": "^1.5.0",
-    "@qavajs/steps-wdio": "^0.33.0",
-    "@qavajs/wdio-service-adapter": "^0.0.3",
+    "@qavajs/memory": "^1.6.1",
+    "@qavajs/po-playwright": "^0.11.0",
+    "@qavajs/steps-playwright": "^0.29.0",
     "@qavajs/webstorm-adapter": "^8.0.0",
-    "@qavajs/xunit-formatter": "^0.0.4",
-    "@wdio/selenium-standalone-service": "^8.11.0"
+    "@qavajs/xunit-formatter": "^0.0.4"
   }
 }

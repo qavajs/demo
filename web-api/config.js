@@ -1,4 +1,4 @@
-const Memory = require('../desktop-web/memory');
+const Memory = require('./memory');
 
 module.exports = {
     default: {
