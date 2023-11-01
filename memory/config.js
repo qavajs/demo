@@ -9,7 +9,7 @@ module.exports = {
         format: [
             '@qavajs/html-formatter:report/report.html',
             '@qavajs/console-formatter',
-            '@qavajs/xunit-formatter:report/report.xml'
+            'junit:report/report.xml'
         ],
         formatOptions: {
             console: {
@@ -17,7 +17,6 @@ module.exports = {
             }
         },
         memory: new Memory(),
-        parallel: 2,
-        publishQuiet: true
+        parallel: 2
     }
 }

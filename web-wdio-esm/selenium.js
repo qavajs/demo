@@ -16,7 +16,7 @@ export default {
     },
     format: [
         '@qavajs/console-formatter',
-        '@qavajs/xunit-formatter:report/report.xml',
+        'junit:report/report.xml',
         '@qavajs/html-formatter:report/report.html'
     ],
     formatOptions: {
@@ -28,6 +28,5 @@ export default {
     memory: new Memory(),
     pageObject: new App(),
     defaultTimeout: 20000,
-    parallel: 2,
-    publishQuiet: true
+    parallel: 2
 }
