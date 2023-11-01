@@ -4,7 +4,6 @@
   "description": "demo repository that demonstrates framework capabilities",
   "main": "index.js",
   "scripts": {
-    "postinstall": "node -e 'const fs = require(\"fs\"); !fs.existsSync(\"./report\") && fs.mkdirSync(\"./report\")'",
     "test:android": "qavajs run --config android.js",
     "test:ios": "qavajs run --config ios.js"
   },
@@ -21,19 +20,18 @@
   },
   "homepage": "https://github.com/qavajs/demo#readme",
   "dependencies": {
-    "@cucumber/cucumber": "^9.1.2",
-    "@qavajs/cli": "^0.0.23",
-    "@qavajs/console-formatter": "^0.2.1",
-    "@qavajs/html-formatter": "^0.0.11",
-    "@qavajs/memory": "^1.4.1",
-    "@qavajs/po": "^1.4.0",
-    "@qavajs/steps-wdio": "^0.0.29",
-    "@qavajs/wdio-service-adapter": "^0.0.2",
-    "@qavajs/xunit-formatter": "^0.0.4",
-    "@wdio/appium-service": "^8.10.4",
-    "appium": "^2.0.0-beta.71",
-    "chromedriver": "^113.0.0",
+    "@cucumber/cucumber": "^10.0.1",
+    "@qavajs/cli": "^0.31.0",
+    "@qavajs/console-formatter": "^0.6.0",
+    "@qavajs/html-formatter": "^0.15.2",
+    "@qavajs/memory": "^1.6.2",
+    "@qavajs/po": "^1.6.0",
+    "@qavajs/steps-wdio": "^0.42.0",
+    "@qavajs/wdio-service-adapter": "^0.0.3",
+    "@wdio/appium-service": "^8.20.4",
+    "appium": "^2.2.1",
+    "chromedriver": "^119.0.0",
     "start-ios-simulator": "^1.0.1",
-    "appium-xcuitest-driver": "^4.29.2"
+    "appium-xcuitest-driver": "^5.8.1"
   }
 }

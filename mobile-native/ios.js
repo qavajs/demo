@@ -32,12 +32,11 @@ module.exports = {
         format: [
             '@qavajs/html-formatter:report/report.html',
             '@qavajs/console-formatter',
-            '@qavajs/xunit-formatter:report/file.xml'
+            'junit:report/file.xml'
         ],
         memory: new Memory(),
         pageObject: new App(),
         parallel: 1,
-        defaultTimeout: 60000,
-        publishQuiet: true
+        defaultTimeout: 60000
     }
 }

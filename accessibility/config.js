@@ -22,7 +22,7 @@ module.exports = {
             'json:report/report.json',
             '@qavajs/html-formatter:report/report.html',
             '@qavajs/console-formatter',
-            '@qavajs/xunit-formatter:report/report.xml'
+            'junit:report/report.xml'
         ],
         memory: new Memory(),
         pageObject: new App(),
@@ -35,7 +35,6 @@ module.exports = {
             }
         },
         parallel: 1,
-        defaultTimeout: 25000,
-        publishQuiet: true
+        defaultTimeout: 25000
     }
 }

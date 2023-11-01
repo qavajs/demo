@@ -33,7 +33,7 @@ module.exports = {
         format: [
             '@qavajs/html-formatter:report/report.html',
             '@qavajs/console-formatter',
-            '@qavajs/xunit-formatter:report/file.xml'
+            'junit:report/file.xml'
         ],
         memory: new Memory(),
         pageObject: new App(),

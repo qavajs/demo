@@ -15,11 +15,12 @@ module.exports = {
                 'goog:chromeOptions': {
                     args: ['--headless']
                 }
-            }
+            },
+            screenshot: ['onFail']
         },
         format: [
             '@qavajs/console-formatter',
-            '@qavajs/xunit-formatter:report/report.xml',
+            'junit:report/report.xml',
             '@qavajs/html-formatter:report/report.html'
         ],
         formatOptions: {
@@ -30,8 +31,6 @@ module.exports = {
         memory: new Memory(),
         pageObject: new App(),
         defaultTimeout: 20000,
-        screenshot: ['onFail'],
-        parallel: 2,
-        publishQuiet: true
+        parallel: 2
     }
 }
