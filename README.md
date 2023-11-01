@@ -5,8 +5,6 @@ demo repository demonstrating framework capabilities
 
 `npm install`
 
-`npm run build`
-
 ### test
 
 `npm run test`
