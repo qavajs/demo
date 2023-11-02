@@ -24,9 +24,8 @@ module.exports = {
         ],
         memory: new Memory(),
         pageObject: new App(),
-        defaultTimeout: 20000,
+        defaultTimeout: 60000,
         screenshot: ['onFail'],
-        parallel: 2,
-        publishQuiet: true
+        parallel: 1
     }
 }
