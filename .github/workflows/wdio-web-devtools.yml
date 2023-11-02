@@ -1,4 +1,4 @@
-name: WebdriverIO Web Devtools on Playwright image
+name: WebdriverIO Web Devtools Docker
 
 on:
   workflow_dispatch:
@@ -6,7 +6,7 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
-    container: cypress/browsers:latest
+    container: zenika/alpine-chrome:with-puppeteer
     steps:
       - uses: actions/checkout@v3
       - name: install modules
