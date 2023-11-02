@@ -14,6 +14,8 @@ jobs:
         run: npm ci
       - name: execute tests
         working-directory: ./desktop-web
+        env:
+          CHROME_PATH: /ms-playwright/chromium
         run: npm run test:devtools
       - name: report artifact
         uses: actions/upload-artifact@v3
