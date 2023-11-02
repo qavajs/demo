@@ -6,7 +6,7 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
-    container: zenika/alpine-chrome:with-puppeteer
+    container: atlassian/default-image
     steps:
       - uses: actions/checkout@v3
       - name: install modules
