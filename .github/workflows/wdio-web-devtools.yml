@@ -6,7 +6,7 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
-    container: browserless/chrome:latest
+    container: cimg/node:20.9.0-browsers
     steps:
       - uses: actions/checkout@v3
       - name: install modules
