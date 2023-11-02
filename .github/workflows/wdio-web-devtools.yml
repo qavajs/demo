@@ -6,7 +6,7 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
-    container: mcr.microsoft.com/playwright:v1.39.0-jammy
+    container: ianwalter/puppeteer:latest
     steps:
       - uses: actions/checkout@v3
       - name: install modules
@@ -14,8 +14,6 @@ jobs:
         run: npm ci
       - name: execute tests
         working-directory: ./desktop-web
-        env:
-          CHROME_PATH: /ms-playwright/chromium
         run: npm run test:devtools
       - name: report artifact
         uses: actions/upload-artifact@v3
