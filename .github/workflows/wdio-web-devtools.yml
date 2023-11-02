@@ -1,16 +1,13 @@
-name: WebdriverIO Web Devtools
+name: WebdriverIO Web Devtools on Playwright image
 
 on:
   workflow_dispatch:
 
 jobs:
   test:
-    runs-on: ubuntu-latest
+    runs-on: mcr.microsoft.com/playwright:v1.39.0-jammy
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 18
       - name: install modules
         working-directory: ./desktop-web
         run: npm ci
