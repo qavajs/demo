@@ -6,7 +6,7 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
-    container: ianwalter/puppeteer:latest
+    container: ghcr.io/puppeteer/puppeteer
     steps:
       - uses: actions/checkout@v3
       - name: install modules
