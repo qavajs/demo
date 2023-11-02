@@ -5,7 +5,8 @@ on:
 
 jobs:
   test:
-    runs-on: mcr.microsoft.com/playwright:v1.39.0-jammy
+    runs-on: ubuntu-latest
+    container: mcr.microsoft.com/playwright:v1.39.0-jammy
     steps:
       - uses: actions/checkout@v3
       - name: install modules
