@@ -10,6 +10,7 @@ module.exports = {
         ],
         browser: {
             logLevel: 'warn',
+            automationProtocol: 'devtools',
             capabilities: {
                 browserName: 'chrome',
                 'goog:chromeOptions': {
@@ -31,6 +32,6 @@ module.exports = {
         memory: new Memory(),
         pageObject: new App(),
         defaultTimeout: 20000,
-        parallel: 2
+        parallel: 1
     }
 }

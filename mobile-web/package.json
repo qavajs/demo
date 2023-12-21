@@ -23,17 +23,16 @@
   "homepage": "https://github.com/qavajs/demo#readme",
   "dependencies": {
     "@cucumber/cucumber": "^10.0.1",
-    "@qavajs/cli": "^0.31.0",
+    "@qavajs/cli": "^0.33.0",
     "@qavajs/console-formatter": "^0.6.0",
-    "@qavajs/html-formatter": "^0.15.2",
+    "@qavajs/html-formatter": "^0.15.3",
     "@qavajs/memory": "^1.6.2",
-    "@qavajs/po": "^1.6.0",
-    "@qavajs/steps-wdio": "^0.42.0",
+    "@qavajs/po": "^1.8.0",
+    "@qavajs/steps-wdio": "^0.44.1",
     "@qavajs/wdio-service-adapter": "^0.0.3",
-    "@qavajs/xunit-formatter": "^0.0.4",
-    "@wdio/appium-service": "^8.20.4",
-    "appium": "^2.2.1",
-    "chromedriver": "^119.0.0",
-    "appium-xcuitest-driver": "^5.8.1"
+    "@wdio/appium-service": "^8.26.2",
+    "appium": "^2.2.3",
+    "chromedriver": "^120.0.0",
+    "appium-xcuitest-driver": "^5.12.2"
   }
 }

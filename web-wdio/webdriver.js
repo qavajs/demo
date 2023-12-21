@@ -10,6 +10,7 @@ module.exports = {
         ],
         browser: {
             logLevel: 'warn',
+            automationProtocol: 'webdriver',
             capabilities: {
                 browserName: 'chrome',
                 'goog:chromeOptions': {
@@ -28,10 +29,9 @@ module.exports = {
                 showLogs: true
             }
         },
-        service: [wdioService('@wdio/selenium-standalone-service')],
         memory: new Memory(),
         pageObject: new App(),
         defaultTimeout: 40000,
-        parallel: 2
+        parallel: 1
     }
 }

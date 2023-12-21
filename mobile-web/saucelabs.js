@@ -53,7 +53,6 @@ module.exports = {
         memory: new Memory(),
         pageObject: new App(),
         parallel: 1,
-        defaultTimeout: 30000,
-        publishQuiet: true
+        defaultTimeout: 30000
     }
 }

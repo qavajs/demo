@@ -13,7 +13,8 @@ module.exports = {
                 page: 5000
             },
             capabilities: {
-                browserName: 'chromium'
+                browserName: 'chromium',
+                headless: false
             }
         },
         formatOptions: {
