@@ -88,7 +88,7 @@ Feature: Todo MVC
     And I click '#1 of Todos > Complete'
     And I click 'Completed Filter'
     Then I expect text of '#1 of Todos' to equal 'new todo 1'
-   @debug
+
   Scenario: Complete and filter todos
     When I type 'new todo 1' to 'Todo Input'
     And I press 'Enter' key
