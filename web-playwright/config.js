@@ -1,5 +1,6 @@
 const Memory = require('./memory');
 const App = require('./page_object');
+const { devices } = require('playwright');
 
 module.exports = {
     default: {
