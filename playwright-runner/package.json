@@ -1,0 +1,26 @@
+{
+  "name": "qavajs-ecom-demo",
+  "version": "1.0.0",
+  "description": "qavajs ecom demo",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "playwright install",
+    "debug": "playwright test --ui",
+    "test": "playwright test"
+  },
+  "author": "Oleksandr Halichenko",
+  "license": "MIT",
+  "dependencies": {
+    "@cucumber/cucumber": "^10.3.2",
+    "@qavajs/cli": "^0.37.0",
+    "@qavajs/memory": "^1.7.0",
+    "@qavajs/playwright-runner-adapter": "^0.1.1",
+    "@qavajs/po-playwright": "^0.14.0",
+    "@qavajs/steps-memory": "^0.15.0",
+    "@qavajs/steps-playwright": "^0.46.1",
+    "ts-node": "^10.9.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.2"
+  }
+}
