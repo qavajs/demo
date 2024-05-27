@@ -1,0 +1,30 @@
+name: Playwright Runner
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 20
+      - name: install modules
+        working-directory: ./playwright-runner
+        run: npm ci
+      - name: execute tests
+        working-directory: ./playwright-runner
+        run: npm run test
+      - name: report artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: report
+          path: playwright-runner/report/report.html
+      - name: junit report
+        uses: mikepenz/action-junit-report@v3
+        if: always()
+        with:
+          report_paths: playwright-runner/report/report.xml
+          fail_on_failure: true
