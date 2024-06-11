@@ -9,13 +9,10 @@
   "author": "Alexandr Galichenko",
   "license": "MIT",
   "dependencies": {
-    "@badeball/cypress-cucumber-preprocessor": "^20.0.2",
-    "@cypress/webpack-preprocessor": "^6.0.1",
+    "@qavajs/cypress": "^0.1.1",
+    "@qavajs/cypress-runner-adapter": "^0.1.1",
     "@qavajs/memory": "^1.7.0",
     "@qavajs/po-cypress": "^0.1.0",
-    "@qavajs/steps-cypress": "^0.1.0",
-    "cypress": "^13.7.0",
-    "ts-loader": "^9.5.1",
-    "typescript": "^5.4.2"
+    "cypress": "^13.11.0"
   }
 }

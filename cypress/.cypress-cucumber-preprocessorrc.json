@@ -1,6 +1,0 @@
-{
-  "stepDefinitions": [
-    "./node_modules/@qavajs/steps-cypress/index.js",
-    "./step_definitions/*.ts"
-  ]
-}
