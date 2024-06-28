@@ -4,8 +4,7 @@
   "description": "demo repository that demonstrates framework capabilities",
   "main": "index.js",
   "scripts": {
-    "test:devtools": "qavajs run --config devtools.js",
-    "test:webdriver": "qavajs run --config webdriver.js"
+    "test": "qavajs run --config webdriver.js"
   },
   "repository": {
     "type": "git",
@@ -20,14 +19,13 @@
   },
   "homepage": "https://github.com/qavajs/demo#readme",
   "dependencies": {
-    "@cucumber/cucumber": "^10.0.1",
-    "@qavajs/cli": "^0.32.1",
-    "@qavajs/console-formatter": "^0.6.0",
-    "@qavajs/html-formatter": "^0.15.2",
-    "@qavajs/memory": "^1.6.2",
-    "@qavajs/po": "^1.8.0",
-    "@qavajs/steps-wdio": "^0.44.0",
-    "@qavajs/webstorm-adapter": "^8.0.0",
-    "devtools": "^8.24.6"
+    "@cucumber/cucumber": "^10.8.0",
+    "@qavajs/cli": "^0.39.0",
+    "@qavajs/console-formatter": "^0.7.2",
+    "@qavajs/html-formatter": "^0.16.0",
+    "@qavajs/memory": "^1.7.0",
+    "@qavajs/po": "^1.10.0",
+    "@qavajs/steps-wdio": "^0.51.0",
+    "@qavajs/webstorm-adapter": "^8.0.0"
   }
 }

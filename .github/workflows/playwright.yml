@@ -10,10 +10,13 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 22
       - name: install modules
         working-directory: ./web-playwright
         run: npm ci
+      - name: install playwright browsers
+        working-directory: ./web-playwright
+        run: npx playwright install
       - name: execute tests
         working-directory: ./web-playwright
         run: npm run test

@@ -1,6 +1,5 @@
 const Memory = require('./memory');
 const App = require('./page_object');
-const wdioService = require('@qavajs/wdio-service-adapter');
 module.exports = {
     default: {
         paths: ['features/*.feature'],

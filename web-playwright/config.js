@@ -14,8 +14,7 @@ module.exports = {
                 page: 5000
             },
             capabilities: {
-                browserName: 'chromium',
-                headless: false
+                browserName: 'chromium'
             }
         },
         formatOptions: {

@@ -19,15 +19,15 @@
   },
   "homepage": "https://github.com/qavajs/demo#readme",
   "dependencies": {
-    "@cucumber/cucumber": "^10.0.1",
-    "@qavajs/cli": "^0.31.0",
-    "@qavajs/console-formatter": "^0.6.0",
-    "@qavajs/html-formatter": "^0.15.2",
-    "@qavajs/memory": "^1.6.2",
-    "@qavajs/po": "^1.6.0",
-    "@qavajs/steps-wdio": "^0.42.0",
+    "@cucumber/cucumber": "^10.8.0",
+    "@qavajs/cli": "^0.39.0",
+    "@qavajs/console-formatter": "^0.7.2",
+    "@qavajs/html-formatter": "^0.16.0",
+    "@qavajs/memory": "^1.7.0",
+    "@qavajs/po": "^1.10.0",
+    "@qavajs/steps-wdio": "^0.51.0",
     "@qavajs/webstorm-adapter": "^8.0.0",
-    "ts-node": "^10.9.1",
-    "typescript": "^5.2.2"
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.2"
   }
 }
