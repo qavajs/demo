@@ -27,6 +27,7 @@
     "@qavajs/memory": "^1.7.0",
     "@qavajs/po": "^1.10.0",
     "@qavajs/steps-wdio": "^0.51.0",
+    "@qavajs/validation": "^0.9.0",
     "@qavajs/wdio-service-adapter": "^0.0.3",
     "@qavajs/webstorm-adapter": "^8.0.0",
     "@wdio/selenium-standalone-service": "^8.15.0"
