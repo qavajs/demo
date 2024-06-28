@@ -10,9 +10,9 @@
   "license": "MIT",
   "dependencies": {
     "@qavajs/cypress": "^0.1.1",
-    "@qavajs/cypress-runner-adapter": "^0.1.1",
+    "@qavajs/cypress-runner-adapter": "^0.2.0",
     "@qavajs/memory": "^1.7.0",
-    "@qavajs/po-cypress": "^0.1.0",
-    "cypress": "^13.11.0"
+    "@qavajs/po-cypress": "^0.2.0",
+    "cypress": "^13.12.0"
   }
 }
