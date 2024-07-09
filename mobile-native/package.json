@@ -4,6 +4,7 @@
   "description": "demo repository that demonstrates framework capabilities",
   "main": "index.js",
   "scripts": {
+    "start:appium": "appium",
     "test:android": "qavajs run --config android.js",
     "test:ios": "qavajs run --config ios.js"
   },
@@ -23,16 +24,16 @@
     "@cucumber/cucumber": "^10.8.0",
     "@qavajs/cli": "^0.39.0",
     "@qavajs/console-formatter": "^0.7.2",
-    "@qavajs/html-formatter": "^0.16.0",
+    "@qavajs/html-formatter": "^0.18.1",
     "@qavajs/memory": "^1.7.0",
     "@qavajs/po": "^1.10.0",
     "@qavajs/validation": "^0.9.0",
     "@qavajs/steps-wdio": "^0.51.0",
     "@qavajs/wdio-service-adapter": "^0.0.3",
-    "@wdio/appium-service": "^8.39.0",
+    "@wdio/appium-service": "^8.39.1",
     "appium": "^2.11.1",
     "chromedriver": "^126.0.4",
     "start-ios-simulator": "^1.0.1",
-    "appium-xcuitest-driver": "^7.21.2"
+    "appium-xcuitest-driver": "^7.23.0"
   }
 }

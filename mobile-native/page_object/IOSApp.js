@@ -7,7 +7,7 @@ module.exports = class IOSApp {
     NavMenu = $(new NavMenu(XCUITestClassChain('**/XCUIElementTypeOther[`label == "Home Webview Login Forms Swipe Drag"`][2]')));
     LoginForm = $(new LoginForm(XCUITestPredicate('name == "Login-screen"')));
     NotificationPopup = $(new NotificationPopup(XCUITestPredicate('label == "Success" AND name == "Success" AND type == "XCUIElementTypeAlert"')));
-    Form = $(new Form('~wdioDemoApp'));
+    Form = $(new Form('~wdiodemoapp'));
 }
 
 class NavMenu extends Component {
