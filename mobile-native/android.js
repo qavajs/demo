@@ -1,7 +1,6 @@
 const Memory = require('./memory');
 const App = require('./page_object/AndroidApp');
-const { join } = require('path');
-const wdioService = require('@qavajs/wdio-service-adapter');
+const { join } = require('node:path');
 
 module.exports = {
     default: {
@@ -18,15 +17,15 @@ module.exports = {
             capabilities: {
                 platformName: 'Android',
                 'appium:automationName': 'UiAutomator2',
-                'appium:app': join(process.cwd(), './apps/Android-NativeDemoApp-0.4.0.apk'),
+                'appium:app': join(process.cwd(), './apps/android.wdio.native.app.v1.0.8.apk'),
                 'appium:appWaitActivity': 'com.wdiodemoapp.MainActivity',
                 'appium:newCommandTimeout': 240,
             }
         },
         format: [
-            '@qavajs/html-formatter:report/report.html',
+            ['@qavajs/html-formatter', 'report/report.html'],
             '@qavajs/console-formatter',
-            'junit:report/file.xml'
+            ['junit', 'report/report.xml']
         ],
         memory: new Memory(),
         pageObject: new App(),

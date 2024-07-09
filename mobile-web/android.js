@@ -1,16 +1,5 @@
 const Memory = require('./memory');
 const App = require('./page_object');
-const { resolve } = require('path');
-const wdioService = require('@qavajs/wdio-service-adapter');
-
-const appiumConfig = wdioService([
-    '@wdio/appium-service',
-    {
-        args: {
-            chromedriverExecutable: resolve('node_modules/chromedriver/lib/chromedriver/chromedriver.exe')
-        }
-    }
-])
 
 module.exports = {
     default: {
