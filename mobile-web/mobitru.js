@@ -51,6 +51,11 @@ module.exports = {
         memory: new Memory(),
         pageObject: new App(),
         parallel: 1,
-        defaultTimeout: 30000
+        defaultTimeout: 30000,
+        service: [{
+            before() {
+                console.log('I am executed');
+            }
+        }]
     }
 }
