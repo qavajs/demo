@@ -1,4 +1,4 @@
-const { $, $$, Component } = require('@qavajs/po');
+const { $, $$, Component, Selector } = require('@qavajs/po');
 
 const UiAutomator2 = (selector) => `android=new UiSelector().${selector}`;
 
@@ -10,7 +10,7 @@ module.exports = class MobileApp{
 
 class NavMenu extends Component {
     LoginButton = $(UiAutomator2('className("android.widget.Button").description("Login")'));
-    Buttons = $$(UiAutomator2('className("android.widget.Button")'));
+    Button = $(Selector(text => UiAutomator2(`className("android.widget.TextView").text("${text}")`)));
 }
 
 class LoginForm extends Component {

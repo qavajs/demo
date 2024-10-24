@@ -1,8 +1,8 @@
 Feature: Mobile Native
 
-  @mobile
+  @mobile @android @ios
   Scenario: Mobile Login
-    When I click 'Nav Menu > #3 of Buttons'
+    When I click 'Nav Menu > Button (Login)'
     When I type 'Username@email.com' to 'Login Form > Username'
     When I type 'Password' to 'Login Form > Password'
     When I click 'Login Form > Login Button'
@@ -11,7 +11,7 @@ Feature: Mobile Native
 
   @mobile @ios
   Scenario: Mobile Login
-    When I click 'Nav Menu > #Forms in Buttons'
+    When I click 'Nav Menu > Button (Forms)'
     When I type 'This is qavajs' to 'Form > Input Field'
     When I expect text of 'Form > You Have Typed' to equal 'This is qavajs'
     When I click 'Form > Switch'
