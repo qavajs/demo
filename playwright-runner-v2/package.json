@@ -1,0 +1,21 @@
+{
+  "name": "qavajs-playwright-v2",
+  "version": "1.0.0",
+  "description": "qavajs playwright v2 demo",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "playwright install",
+    "debug": "playwright test --ui",
+    "test": "playwright test"
+  },
+  "author": "Oleksandr Halichenko",
+  "license": "MIT",
+  "dependencies": {
+    "@cucumber/cucumber": "^11.0.1",
+    "@qavajs/playwright-runner-adapter": "^0.7.0",
+    "@qavajs/playwright": "^2.1.1",
+    "@qavajs/memory": "^1.10.1",
+    "ts-node": "^10.9.2",
+    "@types/node": "^22.8.4"
+  }
+}
