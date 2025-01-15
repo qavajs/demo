@@ -11,11 +11,11 @@
   "author": "Oleksandr Halichenko",
   "license": "MIT",
   "dependencies": {
-    "@cucumber/cucumber": "^11.0.1",
-    "@qavajs/playwright-runner-adapter": "^0.7.0",
-    "@qavajs/playwright": "^2.1.1",
-    "@qavajs/memory": "^1.10.1",
+    "@cucumber/cucumber": "^11.2.0",
+    "@qavajs/playwright-runner-adapter": "^1.2.0",
+    "@qavajs/playwright": "^2.3.1",
+    "@qavajs/memory": "^1.10.2",
     "ts-node": "^10.9.2",
-    "@types/node": "^22.8.4"
+    "@types/node": "^22.10.6"
   }
 }
