@@ -9,5 +9,5 @@ export default {
         'node_modules/@qavajs/playwright/index.js'
     ],
     memory: new Memory(),
-    pageObject: App,
+    pageObject: new App(),
 }
