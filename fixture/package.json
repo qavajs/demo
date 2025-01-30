@@ -1,0 +1,33 @@
+{
+  "name": "@qavajs/demo",
+  "version": "1.0.0",
+  "description": "demo repository that demonstrates framework capabilities",
+  "main": "index.js",
+  "scripts": {
+    "test": "qavajs run --config config.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qavajs/demo.git"
+  },
+  "authors": [
+    "Alexandr Galichenko"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/qavajs/demo/issues"
+  },
+  "homepage": "https://github.com/qavajs/demo#readme",
+  "dependencies": {
+    "@cucumber/cucumber": "^11.2.0",
+    "@qavajs/console-formatter": "^0.8.0",
+    "@qavajs/core": "^2.2.0",
+    "@qavajs/html-formatter": "^0.18.1",
+    "@qavajs/memory": "^1.10.2",
+    "@qavajs/steps-playwright": "^2.3.0",
+    "@qavajs/validation": "^1.0.0",
+    "@qavajs/webstorm-adapter": "^8.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
+  }
+}
