@@ -1,0 +1,38 @@
+{
+  "name": "@qavajs/demo",
+  "version": "1.0.0",
+  "description": "demo repository that demonstrates framework capabilities",
+  "main": "index.js",
+  "scripts": {
+    "test:android": "qavajs run --config android.js",
+    "test:ios": "qavajs run --config ios.js",
+    "test:mobitru": "qavajs run --config mobitru.js",
+    "test:saucelabs": "qavajs run --config saucelabs.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qavajs/demo.git"
+  },
+  "authors": [
+    "Alexandr Galichenko"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/qavajs/demo/issues"
+  },
+  "homepage": "https://github.com/qavajs/demo#readme",
+  "dependencies": {
+    "@cucumber/cucumber": "^11.2.0",
+    "@qavajs/core": "^2.4.0",
+    "@qavajs/console-formatter": "^1.0.0",
+    "@qavajs/html-formatter": "^0.18.1",
+    "@qavajs/memory": "^1.10.2",
+    "@qavajs/po": "^1.12.1",
+    "@qavajs/steps-wdio": "^2.5.0",
+    "@qavajs/wdio-service-adapter": "^0.0.3",
+    "@wdio/appium-service": "^9.9.3",
+    "appium": "^2.16.2",
+    "appium-xcuitest-driver": "^8.3.2",
+    "chromedriver": "^133.0.2"
+  }
+}
