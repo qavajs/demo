@@ -4,7 +4,7 @@
   "description": "demo repository that demonstrates framework capabilities",
   "main": "index.js",
   "scripts": {
-    "test": "qavajs run --config config.js"
+    "test": "qavajs run --config config.ts"
   },
   "repository": {
     "type": "git",
@@ -19,14 +19,13 @@
   },
   "homepage": "https://github.com/qavajs/demo#readme",
   "dependencies": {
-    "@cucumber/cucumber": "^10.0.1",
-    "@qavajs/cli": "^0.31.0",
-    "@qavajs/console-formatter": "^0.6.0",
-    "@qavajs/html-formatter": "^0.15.2",
-    "@qavajs/memory": "^1.6.2",
-    "@qavajs/po-playwright": "^0.11.1",
-    "@qavajs/steps-accessibility": "^0.0.2",
-    "@qavajs/steps-playwright": "^0.38.0",
-    "@qavajs/webstorm-adapter": "^8.0.0"
+    "@cucumber/cucumber": "^11.2.0",
+    "@qavajs/console-formatter": "^1.0.0",
+    "@qavajs/core": "^2.4.0",
+    "@qavajs/html-formatter": "^0.18.1",
+    "@qavajs/memory": "^1.10.2",
+    "@qavajs/steps-accessibility-ea": "^0.0.1",
+    "@qavajs/steps-playwright": "^2.4.0",
+    "ts-node": "^10.9.2"
   }
 }

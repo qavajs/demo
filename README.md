@@ -15,4 +15,4 @@ To run any demo:
 #### [Mobile Web With WebdriverIO](mobile-web)
 #### [Desktop Electron With Playwright](electron-playwright)
 #### [API](web-api)
-#### [Accessibility](accessibility)
+#### [Accessibility](accessibility-axe)
