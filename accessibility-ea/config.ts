@@ -4,7 +4,7 @@ import { App } from './page_object';
 export default {
     paths: ['features/*.feature'],
     require: [
-        'node_modules/@qavajs/steps-playwright/index.js',
+        'node_modules/@qavajs/steps-wdio/index.js',
         'node_modules/@qavajs/steps-accessibility-ea/index.js'
     ],
     browser: {
@@ -13,8 +13,7 @@ export default {
             page: 5000
         },
         capabilities: {
-            browserName: 'chromium',
-            headless: false
+            browserName: 'chrome'
         }
     },
     format: [
