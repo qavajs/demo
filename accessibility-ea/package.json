@@ -25,7 +25,7 @@
     "@qavajs/html-formatter": "^0.18.1",
     "@qavajs/memory": "^1.10.2",
     "@qavajs/steps-accessibility-ea": "^0.0.1",
-    "@qavajs/steps-playwright": "^2.4.0",
+    "@qavajs/steps-wdio": "^2.5.0",
     "ts-node": "^10.9.2"
   }
 }
