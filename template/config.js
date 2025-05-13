@@ -5,13 +5,8 @@ module.exports = {
     default: {
         paths: ['features/Template.feature'],
         require: [
-            'node_modules/@qavajs/steps-wdio/index.js'
-        ],
-        requireModule: [
-            '@qavajs/template'
-        ],
-        templates: [
-            'templates/*.feature'
+            'node_modules/@qavajs/steps-wdio/index.js',
+            'templates/*.js'
         ],
         browser: {
             logLevel: 'warn',
@@ -24,7 +19,7 @@ module.exports = {
             screenshot: ['onFail']
         },
         format: [
-            '@qavajs/html-formatter:report/report.html',
+            ['@qavajs/html-formatter', 'report/report.html'],
             'junit:report/report.xml',
             '@qavajs/console-formatter'
         ],

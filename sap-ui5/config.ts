@@ -29,6 +29,6 @@ export default {
     ],
     memory: new Memory(),
     pageObject: new App(),
-    parallel: 1,
+    parallel: 4,
     defaultTimeout: 25000
 }

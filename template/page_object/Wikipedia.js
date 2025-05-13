@@ -1,10 +1,8 @@
-const { $, $$ } = require('@qavajs/po');
+const { locator } = require('@qavajs/steps-wdio/po');
 
 class Wikipedia {
-    selector = '.search-container';
-
-    SearchInput = $('#searchInput');
-    SearchButton = $('button[type=submit]');
+    SearchInput = locator('#searchInput');
+    SearchButton = locator('button[type=submit]');
 }
 
 module.exports = Wikipedia;
