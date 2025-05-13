@@ -9,9 +9,9 @@
   "author": "Alexandr Galichenko",
   "license": "MIT",
   "dependencies": {
-    "@qavajs/cypress": "^2.0.0",
-    "@qavajs/cypress-runner-adapter": "^1.0.1",
+    "@qavajs/cypress": "^2.0.1",
+    "@qavajs/cypress-runner-adapter": "^1.1.0",
     "@qavajs/memory": "^1.10.2",
-    "cypress": "^13.17.0"
+    "cypress": "^14.3.3"
   }
 }
