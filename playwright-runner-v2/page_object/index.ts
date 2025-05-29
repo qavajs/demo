@@ -1,4 +1,4 @@
-import { locator } from '@qavajs/playwright/po';
+import { locator } from '@qavajs/playwright';
 
 export default class App {
   UsernameInput = locator('#user-name');

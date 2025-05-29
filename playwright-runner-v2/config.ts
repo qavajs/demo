@@ -6,7 +6,7 @@ export default {
         'features/**/*.feature'
     ],
     require: [
-        'node_modules/@qavajs/playwright/index.js'
+        'node_modules/@qavajs/playwright/steps.js'
     ],
     memory: new Memory(),
     pageObject: new App(),
