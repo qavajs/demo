@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "demo repository that demonstrates framework capabilities",
   "main": "index.js",
-  "scripts": {
-    "test": "qavajs run --config webdriver.js"
-  },
   "type": "module",
+  "scripts": {
+    "test": "qavajs run --config config.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/qavajs/demo.git"
@@ -21,15 +21,13 @@
   "homepage": "https://github.com/qavajs/demo#readme",
   "dependencies": {
     "@cucumber/cucumber": "^11.3.0",
-    "@qavajs/cli": "^1.0.0",
     "@qavajs/console-formatter": "^1.0.0",
+    "@qavajs/core": "^2.5.0",
     "@qavajs/html-formatter": "^0.18.1",
     "@qavajs/memory": "^1.10.2",
-    "@qavajs/po": "^1.12.1",
-    "@qavajs/steps-wdio": "^1.0.0",
-    "@qavajs/validation": "^1.2.1",
-    "@qavajs/wdio-service-adapter": "^0.0.3",
+    "@qavajs/steps-playwright": "^2.7.0",
     "@qavajs/webstorm-adapter": "^8.0.0",
-    "@wdio/selenium-standalone-service": "^8.15.0"
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
   }
 }
