@@ -1,0 +1,40 @@
+{
+  "name": "@qavajs/demo",
+  "version": "1.0.0",
+  "description": "demo repository that demonstrates framework capabilities",
+  "main": "index.js",
+  "scripts": {
+    "start:appium": "appium",
+    "test:mobitru": "qavajs run --config mobitru.js",
+    "test:android": "qavajs run --config android.js",
+    "test:ios": "qavajs run --config ios.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qavajs/demo.git"
+  },
+  "authors": [
+    "Alexandr Galichenko"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/qavajs/demo/issues"
+  },
+  "homepage": "https://github.com/qavajs/demo#readme",
+  "dependencies": {
+    "@cucumber/cucumber": "^11.3.0",
+    "@qavajs/core": "^2.5.1",
+    "@qavajs/console-formatter": "^1.0.0",
+    "@qavajs/html-formatter": "^0.18.1",
+    "@qavajs/memory": "^1.10.2",
+    "@qavajs/steps-wdio": "^2.8.0",
+    "@qavajs/validation": "^1.2.1",
+    "@qavajs/wdio-service-adapter": "^0.0.3",
+    "@wdio/appium-service": "^9.16.2",
+    "appium": "^2.19.0",
+    "appium-xcuitest-driver": "^9.9.1",
+    "chromedriver": "^138.0.0",
+    "dotenv": "^17.0.0",
+    "start-ios-simulator": "^1.0.1"
+  }
+}
