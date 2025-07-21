@@ -1,4 +1,4 @@
-import {Before, After} from '@qavajs/core';
+import { Before, After } from '@qavajs/core';
 
 Before({name: 'Install app in Mobitru'}, async function() {
     // await driver.removeApp('digital.metro.companion.metro.beta');
@@ -8,6 +8,6 @@ Before({name: 'Install app in Mobitru'}, async function() {
     //     `https://app.mobitru.com/billing/unit/${process.env.BILLING_UNIT}/automation/api/storage/install/${process.env.UDID}/${process.env.APP_FILE_ID}`,
     //     { headers }
     // );
-    await this.driver.terminateApp('com.wdiodemoapp');
-    await this.driver.activateApp('com.wdiodemoapp');
+    await this.playwright.driver.terminateApp('com.wdiodemoapp');
+    await this.playwright.driver.activateApp('com.wdiodemoapp');
 });
