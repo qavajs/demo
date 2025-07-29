@@ -1,12 +1,15 @@
+import 'dotenv/config'
 import { Data } from './memory';
 import { App } from './page_object';
 
-const API_KEY = process.env.API_KEY;
-const encodeKey = encodeURIComponent(API_KEY);
-const PROJECT_NAME = process.env.PROJECT_NAME;
+const KEY = process.env.API_KEY;
+const BILLING_UNIT = process.env.BILLING_UNIT;
+const UDID = process.env.UDID;
+const credentials = `${BILLING_UNIT}:${KEY}`;
+const encodedCredentials = Buffer.from(credentials).toString('base64');
+
 const PLATFORM_NAME = process.env.PLATFORM_NAME;
 const BROWSER_NAME = process.env.BROWSER_NAME;
-const DEVICE_NAME = process.env.DEVICE_NAME;
 const RP_TOKEN = process.env.RP_TOKEN;
 const RP_ENDPOINT = process.env.RP_ENDPOINT;
 const RP_PROJECT = process.env.RP_PROJECT;
@@ -18,7 +21,10 @@ export default {
     ],
     browser: {
         protocol: 'https',
-        hostname: `${PROJECT_NAME}:${encodeKey}@app.mobitru.com`,
+        hostname: 'app.mobitru.com',
+        headers: {
+            Authorization: `Basic ${encodedCredentials}`
+        },
         path: '/wd/hub',
         logLevel: 'debug',
         port: 443,
@@ -26,9 +32,9 @@ export default {
             present: 5000
         },
         capabilities: {
-            platformName: PLATFORM_NAME,
             browserName: BROWSER_NAME,
-            'appium:deviceName': DEVICE_NAME,
+            platformName: PLATFORM_NAME,
+            'appium:udid': UDID,
         }
 
     },
