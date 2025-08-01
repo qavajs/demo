@@ -11,7 +11,9 @@ export default {
         logLevel: 'warn',
         capabilities: {
             browserName: 'chrome',
-        }
+        },
+        screenshot: ['onFail'],
+        snapshot: ['onFail'],
     },
     format: [
         ['@qavajs/html-formatter', 'report/report.html'],
