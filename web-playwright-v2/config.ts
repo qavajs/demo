@@ -1,7 +1,7 @@
 import { Constants } from './memory';
 import { App } from './page_object'
 
-export default {
+const defaultConfig = {
     paths: ['features/*.feature'],
     require: [
         'node_modules/@qavajs/steps-playwright/index.js'
@@ -31,3 +31,18 @@ export default {
     parallel: 1,
     defaultTimeout: 25000
 }
+
+const headless = {
+    ...defaultConfig,
+    browser: {
+        logLevel: 'warn',
+        timeout: {
+            page: 5000
+        },
+        capabilities: {
+            browserName: 'chromium',
+            headless: true
+        }
+    },
+}
+export default defaultConfig;

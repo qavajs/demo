@@ -4,7 +4,8 @@
   "description": "demo repository that demonstrates framework capabilities",
   "main": "index.js",
   "scripts": {
-    "test": "qavajs run --config config.ts"
+    "test": "qavajs run --config config.ts",
+    "test:headless": "qavajs run --config config.ts --profile headless"
   },
   "repository": {
     "type": "git",

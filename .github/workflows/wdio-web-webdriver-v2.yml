@@ -16,12 +16,12 @@ jobs:
         run: npm ci
       - name: execute tests
         working-directory: ./web-wdio-v2
-        run: npm run test:webdriver
+        run: npm run test:headless
       - name: report artifact
         uses: actions/upload-artifact@v4
         with:
           name: report
-          path: web-wdio/report/report.html
+          path: web-wdio-v2/report/report.html
       - name: junit report
         uses: mikepenz/action-junit-report@v4
         if: always()

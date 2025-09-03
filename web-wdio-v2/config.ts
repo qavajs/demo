@@ -1,7 +1,7 @@
 import Memory from './memory';
 import App from './page_object';
 
-export default {
+const defaultConfig = {
     paths: ['features/*.feature'],
     require: [
         'node_modules/@qavajs/steps-wdio/index.js',
@@ -29,3 +29,20 @@ export default {
     pageObject: new App(),
     parallel: 2
 }
+
+export const headless = {
+    ...defaultConfig,
+    browser: {
+        logLevel: 'warn',
+        capabilities: {
+            browserName: 'chrome',
+            'goog:chromeOptions': {
+                args: ['--headless']
+            }
+        },
+        screenshot: ['onFail'],
+        snapshot: ['onFail'],
+    },
+}
+
+export default defaultConfig;
