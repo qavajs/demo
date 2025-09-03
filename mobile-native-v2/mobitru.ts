@@ -30,6 +30,7 @@ export default {
         capabilities: {
             platformName: 'android',
             'appium:udid': UDID,
+            'appium:automationName': 'UiAutomator2',
         },
         reuseSession: true
     },

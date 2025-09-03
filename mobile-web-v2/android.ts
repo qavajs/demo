@@ -14,9 +14,9 @@ export default {
         port: 4723,
         capabilities: {
             platformName: 'Android',
-            browserName: 'chrome'
+            browserName: 'chrome',
+            'appium:automationName': 'UiAutomator2',
         }
-
     },
     format: [
         ['@qavajs/html-formatter', 'report/report.html'],
