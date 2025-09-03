@@ -10,10 +10,13 @@ const encodedCredentials = Buffer.from(credentials).toString('base64');
 
 const PLATFORM_NAME = process.env.PLATFORM_NAME;
 const BROWSER_NAME = process.env.BROWSER_NAME;
+const AUTOMATION_NAME = process.env.AUTOMATION_NAME;
+
 const RP_TOKEN = process.env.RP_TOKEN;
 const RP_ENDPOINT = process.env.RP_ENDPOINT;
 const RP_PROJECT = process.env.RP_PROJECT;
 const RP_LAUNCH = process.env.RP_LAUNCH;
+
 export default {
     paths: ['features/Wikipedia.feature'],
     require: [
@@ -35,6 +38,7 @@ export default {
             browserName: BROWSER_NAME,
             platformName: PLATFORM_NAME,
             'appium:udid': UDID,
+            'appium:automationName': AUTOMATION_NAME
         }
 
     },

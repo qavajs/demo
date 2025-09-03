@@ -6,6 +6,8 @@ const SUACELABS_USER = process.env.SUACELABS_USER;
 const SUACELABS_KEY = process.env.SUACELABS_KEY;
 const PLATFORM_NAME = process.env.PLATFORM_NAME;
 const BROWSER_NAME = process.env.BROWSER_NAME;
+const AUTOMATION_NAME = process.env.AUTOMATION_NAME;
+
 const DEVICE_NAME = process.env.DEVICE_NAME;
 const RP_TOKEN = process.env.RP_TOKEN;
 const RP_ENDPOINT = process.env.RP_ENDPOINT;
@@ -31,6 +33,7 @@ export default {
             platformName: PLATFORM_NAME,
             browserName: BROWSER_NAME,
             'appium:deviceName': DEVICE_NAME,
+            'appium:automationName': AUTOMATION_NAME
         }
 
     },
