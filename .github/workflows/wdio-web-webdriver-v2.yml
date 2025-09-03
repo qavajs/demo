@@ -1,4 +1,4 @@
-name: TestCafe
+name: WebdriverIO V2
 
 on:
   workflow_dispatch:
@@ -7,24 +7,24 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
         with:
           node-version: 22
       - name: install modules
-        working-directory: ./testcafe
+        working-directory: ./web-wdio-v2
         run: npm ci
       - name: execute tests
-        working-directory: ./testcafe
-        run: npm run test
+        working-directory: ./web-wdio-v2
+        run: npm run test:webdriver
       - name: report artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: report
-          path: testcafe/report/report.html
+          path: web-wdio/report/report.html
       - name: junit report
         uses: mikepenz/action-junit-report@v4
         if: always()
         with:
-          report_paths: testcafe/report/report.xml
+          report_paths: web-wdio-v2/report/report.xml
           fail_on_failure: true
