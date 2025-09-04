@@ -1,6 +1,7 @@
 const Memory = require('./memory');
 const App = require('./page_object');
-module.exports = {
+
+const defaultConfig = {
     default: {
         paths: ['features/*.feature'],
         require: [
@@ -12,9 +13,6 @@ module.exports = {
             automationProtocol: 'webdriver',
             capabilities: {
                 browserName: 'chrome',
-                'goog:chromeOptions': {
-                    args: ['--headless']
-                }
             },
             screenshot: ['onFail']
         },
@@ -34,3 +32,20 @@ module.exports = {
         parallel: 1
     }
 }
+
+module.exports.headless = {
+    ...defaultConfig,
+    browser: {
+        logLevel: 'warn',
+        automationProtocol: 'webdriver',
+        capabilities: {
+            browserName: 'chrome',
+            'goog:chromeOptions': {
+                args: ['--headless']
+            }
+        },
+        screenshot: ['onFail']
+    },
+}
+
+module.exports = defaultConfig;

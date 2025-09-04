@@ -4,7 +4,8 @@
   "description": "demo repository that demonstrates framework capabilities",
   "main": "index.js",
   "scripts": {
-    "test": "qavajs run --config webdriver.js"
+    "test": "qavajs run --config webdriver.js",
+    "test:headless": "qavajs run --config webdriver.js --profile headless"
   },
   "repository": {
     "type": "git",
