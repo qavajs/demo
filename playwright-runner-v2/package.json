@@ -4,14 +4,13 @@
   "description": "qavajs playwright v2 demo",
   "main": "index.js",
   "scripts": {
-    "postinstall": "playwright install",
     "debug": "playwright test --ui",
     "test": "playwright test"
   },
   "author": "Oleksandr Halichenko",
   "license": "MIT",
   "dependencies": {
-    "@qavajs/playwright": "^3.0.0",
-    "typescript": "^5.8.3"
+    "@qavajs/playwright": "^3.3.0",
+    "typescript": "^5.9.2"
   }
 }

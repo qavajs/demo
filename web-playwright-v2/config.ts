@@ -32,7 +32,7 @@ const defaultConfig = {
     defaultTimeout: 25000
 }
 
-const headless = {
+export const headless = {
     ...defaultConfig,
     browser: {
         logLevel: 'warn',
@@ -45,4 +45,5 @@ const headless = {
         }
     },
 }
+
 export default defaultConfig;
