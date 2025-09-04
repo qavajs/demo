@@ -1,4 +1,4 @@
-name: WebdriverIO Web Webdriver
+name: WebdriverIO
 
 on:
   workflow_dispatch:
