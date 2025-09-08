@@ -1,0 +1,22 @@
+{
+  "name": "qavajs_project",
+  "version": "1.0.0",
+  "description": "qavajs project",
+  "scripts": {
+    "test:web:local": "qavajs run --config config.ts --profile webLocal",
+    "test:web:mobile:mobitru": "qavajs run --config config.ts --profile mobitruWebMobile",
+    "test:web:desktop:mobitru": "qavajs run --config config.ts --profile mobitruWebDesktop",
+    "test:native:mobile:mobitru": "qavajs run --config config.ts --profile mobitruNativeMobile"
+  },
+  "dependencies": {
+    "@cucumber/cucumber": "^12.2.0",
+    "@qavajs/console-formatter": "^1.0.0",
+    "@qavajs/core": "^2.6.0",
+    "@qavajs/html-formatter": "^0.18.1",
+    "@qavajs/steps-memory": "^2.0.0",
+    "@qavajs/steps-wdio": "^2.9.0",
+    "dotenv": "^17.2.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  }
+}
