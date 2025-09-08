@@ -1,8 +1,9 @@
-# demo
+# qavajs demo repository
 Demo repository of qavajs capabilities
 
 To run any demo:
 
+execute in any folder:
 ```
 npm install
 ```
