@@ -1,10 +1,10 @@
-const { $, $$ } = require('@qavajs/po');
+const { locator } = require('@qavajs/steps-wdio/po');
 
 class WikipediaArticle {
     selector = '#content';
 
-    Title = $('#firstHeading');
-    References = $$('.references li')
+    Title = locator('#firstHeading');
+    References = locator('.references li')
 }
 
 module.exports = WikipediaArticle;
