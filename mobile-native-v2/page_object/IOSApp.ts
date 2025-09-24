@@ -12,7 +12,7 @@ export class App {
 
 class NavMenu {
     LoginButton = locator(XCUITestPredicate('label == "Login"'));
-    Button = locator.template(text => XCUITestPredicate(`type == "XCUIElementTypeButton" AND value ==="${text}"`));
+    Button = locator.template(text => XCUITestPredicate(`type == "XCUIElementTypeButton" AND value == "${text}"`));
 }
 
 class LoginForm {
