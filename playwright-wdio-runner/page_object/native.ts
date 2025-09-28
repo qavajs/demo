@@ -1,9 +1,9 @@
-import { locator } from  '@qavajs/steps-wdio/po';
+import { locator } from  '@qavajs/playwright-wdio';
 
 const XCUITestPredicate = (selector: string) => `-ios predicate string:${selector}`;
 const XCUITestClassChain = (selector: string) => `-ios class chain:${selector}`
 
-export class App {
+export default class App {
     NavMenu = locator(XCUITestClassChain('**/XCUIElementTypeOther[`label == "Home Webview Login Forms Swipe Drag"`][2]')).as(NavMenu);
     LoginForm = locator(XCUITestPredicate('name == "Login-screen"')).as(LoginForm);
     NotificationPopup = locator(XCUITestPredicate('label == "Success" AND name == "Success" AND type == "XCUIElementTypeAlert"')).as(NotificationPopup);
@@ -12,7 +12,7 @@ export class App {
 
 class NavMenu {
     LoginButton = locator(XCUITestPredicate('label == "Login"'));
-    Button = locator.template((text: string) => XCUITestPredicate(`type == "XCUIElementTypeButton" AND name == "${text}"`));
+    Button = locator.template(text => XCUITestPredicate(`type == "XCUIElementTypeButton" AND name == "${text}"`));
 }
 
 class LoginForm {
