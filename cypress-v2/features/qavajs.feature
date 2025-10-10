@@ -91,7 +91,7 @@ Feature: E-com Demo
     Then I expect number of elements in 'Cart Items' collection to equal '1'
     And I expect 'Cart Item (Sauce Labs Backpack)' to be visible
     When I click 'Cart Item (Sauce Labs Backpack) > Remove'
-    Then I expect number of elements in 'Cart Items' collection to equal '0'
+    Then I expect 'Cart Items' not to be present
     Then I expect 'Cart Badge' not to be present
 
 #  Test Case 5: Verify Checkout Process
