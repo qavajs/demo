@@ -1,18 +1,12 @@
 import { Data } from './memory';
 import { App } from './page_object';
 
-const SUACELABS_HOSTNAME = process.env.SUACELABS_HOSTNAME;
-const SUACELABS_USER = process.env.SUACELABS_USER;
-const SUACELABS_KEY = process.env.SUACELABS_KEY;
-const PLATFORM_NAME = process.env.PLATFORM_NAME;
-const BROWSER_NAME = process.env.BROWSER_NAME;
-const AUTOMATION_NAME = process.env.AUTOMATION_NAME;
-
 const DEVICE_NAME = process.env.DEVICE_NAME;
 const RP_TOKEN = process.env.RP_TOKEN;
 const RP_ENDPOINT = process.env.RP_ENDPOINT;
 const RP_PROJECT = process.env.RP_PROJECT;
 const RP_LAUNCH = process.env.RP_LAUNCH;
+
 export default {
     paths: ['features/Wikipedia.feature'],
     require: [
@@ -20,22 +14,21 @@ export default {
     ],
     browser: {
         protocol: 'https',
-        hostname: SUACELABS_HOSTNAME,
+        hostname: 'ondemand.us-west-1.saucelabs.com',
         path: '/wd/hub',
         logLevel: 'debug',
-        user: SUACELABS_USER,
-        key: SUACELABS_KEY,
+        user: process.env.SAUCELABS_USER,
+        key: process.env.SAUCELABS_USER,
         port: 443,
         timeout: {
             present: 5000
         },
         capabilities: {
-            platformName: PLATFORM_NAME,
-            browserName: BROWSER_NAME,
+            platformName: 'Android',
+            browserName: 'chrome',
             'appium:deviceName': DEVICE_NAME,
-            'appium:automationName': AUTOMATION_NAME
+            'appium:automationName': 'UIAutomator2'
         }
-
     },
     format: [
         ['@qavajs/html-formatter', 'report/report.html'],
