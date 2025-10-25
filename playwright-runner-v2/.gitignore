@@ -4,3 +4,4 @@ apps/
 po/
 lib/
 test-results/
+.env

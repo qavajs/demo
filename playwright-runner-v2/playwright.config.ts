@@ -1,3 +1,4 @@
+import 'dotenv/config';
 import { defineConfig, devices } from '@playwright/test';
 import { defineCucumber } from '@qavajs/playwright-runner-adapter';
 

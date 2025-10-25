@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "qavajs run --config config.ts",
-    "test:headless": "qavajs run --config config.ts --profile headless"
+    "test:headless": "qavajs run --config config.ts --profile headless",
+    "test:lambdatest": "qavajs run --config config.ts --profile lambdaTest"
   },
   "repository": {
     "type": "git",
@@ -22,13 +23,14 @@
   "dependencies": {
     "@cucumber/cucumber": "^12.2.0",
     "@qavajs/console-formatter": "^1.1.1",
-    "@qavajs/core": "^2.7.0",
+    "@qavajs/core": "^2.10.0",
     "@qavajs/html-formatter": "^1.0.0",
-    "@qavajs/memory": "^1.10.2",
-    "@qavajs/steps-playwright": "^2.9.0",
-    "@qavajs/validation": "^1.3.0",
+    "@qavajs/memory": "^1.10.3",
+    "@qavajs/steps-playwright": "^2.11.1",
+    "@qavajs/validation": "^1.4.1",
     "@qavajs/webstorm-adapter": "^8.0.0",
+    "dotenv": "^17.2.3",
     "ts-node": "^10.9.2",
-    "typescript": "^5.9.2"
+    "typescript": "^5.9.3"
   }
 }
