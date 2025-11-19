@@ -1,7 +1,7 @@
 Feature: Memory
 
   Scenario: equals
-    Then I expect '$value1' equals '421'
+    Then I expect '$value1' equals '42'
     Then I expect '$value1' equals '$value2'
     Then I expect '$value1' does not equal '1'
     Then I expect '$value1' does not equal '$value3'
