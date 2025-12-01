@@ -23,12 +23,13 @@ const defaultConfig = {
         }
     },
     format: [
+        ['html', 'report/report2.html'],
         ['@qavajs/html-formatter', 'report/report.html'],
-        '@qavajs/console-formatter',
+        ['@qavajs/console-formatter'],
         ['junit', 'report/report.xml']
     ],
     memory: new Constants(),
-    pageObject: App,
+    pageObject: new App(),
     parallel: 1,
     defaultTimeout: 25000
 }

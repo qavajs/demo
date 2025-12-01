@@ -21,7 +21,7 @@
   "dependencies": {
     "@cucumber/cucumber": "^12.2.0",
     "@qavajs/console-formatter": "^1.1.1",
-    "@qavajs/core": "^2.11.0",
+    "@qavajs/core": "^2.12.0",
     "@qavajs/html-formatter": "^1.0.0",
     "@qavajs/memory": "^1.6.2",
     "@qavajs/steps-memory": "^2.0.1",
