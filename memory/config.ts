@@ -6,9 +6,10 @@ export default {
         'node_modules/@qavajs/steps-memory/index.js'
     ],
     format: [
-        '@qavajs/html-formatter:report/report.html',
-        '@qavajs/console-formatter',
-        'junit:report/report.xml'
+        ['html', 'report/report2.html'],
+        ['@qavajs/html-formatter', 'report/report.html'],
+        ['@qavajs/console-formatter'],
+        ['junit', 'report/report.xml']
     ],
     formatOptions: {
         console: {

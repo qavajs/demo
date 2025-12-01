@@ -7,8 +7,10 @@ export default {
         'node_modules/@qavajs/steps-api/index.js'
     ],
     format: [
+        ['html', 'report/report2.html'],
         ['@qavajs/html-formatter', 'report/report.html'],
-        '@qavajs/console-formatter'
+        ['@qavajs/console-formatter'],
+        ['junit', 'report/report.xml']
     ],
     formatOptions: {
         console: {
