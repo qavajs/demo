@@ -21,14 +21,13 @@
   },
   "homepage": "https://github.com/qavajs/demo#readme",
   "dependencies": {
-    "@cucumber/cucumber": "^12.2.0",
+    "@cucumber/cucumber": "^12.4.0",
     "@qavajs/console-formatter": "^1.1.1",
     "@qavajs/core": "^2.12.0",
     "@qavajs/html-formatter": "^1.0.0",
     "@qavajs/memory": "^1.10.3",
-    "@qavajs/steps-playwright": "^2.12.0",
+    "@qavajs/steps-playwright": "^2.14.0",
     "@qavajs/validation": "^1.6.1",
-    "@qavajs/webstorm-adapter": "^8.0.0",
     "dotenv": "^17.2.3",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.3"
