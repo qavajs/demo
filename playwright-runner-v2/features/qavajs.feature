@@ -1,4 +1,4 @@
-Feature: E-com Demo
+Feature: Playwright Runner Adapter Demo
 
 #  Test Case 1: Verify User Login
 #  Preconditions:
