@@ -1,7 +1,8 @@
+import { defineConfig } from '@qavajs/playwright';
 import Memory from './memory';
 import App from './page_object';
 
-export default {
+export default defineConfig({
     paths: [
         'features/**/*.feature'
     ],
@@ -10,4 +11,4 @@ export default {
     ],
     memory: new Memory(),
     pageObject: new App(),
-}
+});

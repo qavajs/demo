@@ -1,6 +1,6 @@
 {
   "name": "qavajs-playwright-v2",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "description": "qavajs playwright v2 demo",
   "main": "index.js",
   "scripts": {
@@ -10,9 +10,9 @@
   "author": "Oleksandr Halichenko",
   "license": "MIT",
   "dependencies": {
-    "@qavajs/playwright": "^3.10.0",
+    "@qavajs/playwright": "^4.0.1",
     "@types/node": "^25.0.10",
-    "dotenv": "^17.2.3",
+    "dotenv": "^17.2.4",
     "typescript": "^5.9.3"
   }
 }
