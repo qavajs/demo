@@ -10,8 +10,8 @@
   "author": "Oleksandr Halichenko",
   "license": "MIT",
   "dependencies": {
-    "@qavajs/playwright": "^4.0.1",
-    "@types/node": "^25.0.10",
+    "@qavajs/playwright": "^4.1.0",
+    "@types/node": "^25.2.3",
     "dotenv": "^17.2.4",
     "typescript": "^5.9.3"
   }

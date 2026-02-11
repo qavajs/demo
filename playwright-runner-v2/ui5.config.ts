@@ -1,10 +1,10 @@
 import { defineConfig } from '@qavajs/playwright';
 import Memory from './memory';
-import App from './page_object';
+import App from './page_object/ui5';
 
 export default defineConfig({
     paths: [
-        'features/**/qavajs.feature'
+        'features/**/ui5.feature'
     ],
     require: [
         'node_modules/@qavajs/playwright/steps.js',
