@@ -29,10 +29,19 @@ export default defineConfig({
     /* Configure projects for major browsers */
     projects: [
         {
-            name: 'chromium',
+            name: 'base',
             use: {
                 ...devices['Desktop Chrome'],
                 hasTouch: true
+            },
+        },
+        {
+            name: 'ui5',
+            testMatch: 'ui5.config.ts',
+            use: {
+                ...devices['Desktop Chrome'],
+                hasTouch: true,
+                headless: false,
             },
         }
     ]
