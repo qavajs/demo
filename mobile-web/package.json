@@ -4,10 +4,10 @@
   "description": "demo repository that demonstrates framework capabilities",
   "main": "index.js",
   "scripts": {
-    "test:android": "qavajs run --config android.js",
-    "test:ios": "qavajs run --config ios.js",
-    "test:mobitru": "qavajs run --config mobitru.js",
-    "test:saucelabs": "qavajs run --config saucelabs.js"
+    "test:android": "qavajs run --config android.ts",
+    "test:ios": "qavajs run --config ios.ts",
+    "test:mobitru": "qavajs run --config mobitru.ts",
+    "test:saucelabs": "qavajs run --config saucelabs.ts"
   },
   "repository": {
     "type": "git",
@@ -22,18 +22,17 @@
   },
   "homepage": "https://github.com/qavajs/demo#readme",
   "dependencies": {
-    "@cucumber/cucumber": "^10.8.0",
-    "@qavajs/cli": "^0.39.0",
-    "@qavajs/console-formatter": "^0.7.2",
-    "@qavajs/html-formatter": "^0.16.0",
-    "@qavajs/memory": "^1.7.0",
-    "@qavajs/po": "^1.10.0",
-    "@qavajs/steps-wdio": "^0.51.0",
-    "@qavajs/validation": "^0.9.0",
+    "@cucumber/cucumber": "^12.1.0",
+    "@qavajs/console-formatter": "^1.0.0",
+    "@qavajs/core": "^2.5.2",
+    "@qavajs/html-formatter": "^0.18.1",
+    "@qavajs/memory": "^1.10.2",
+    "@qavajs/steps-wdio": "^2.9.0",
     "@qavajs/wdio-service-adapter": "^0.0.3",
-    "@wdio/appium-service": "^8.39.0",
-    "appium": "^2.11.1",
-    "appium-xcuitest-driver": "^7.21.2",
-    "chromedriver": "^126.0.4"
+    "@wdio/appium-service": "^9.18.4",
+    "appium": "^2.19.0",
+    "appium-xcuitest-driver": "^9.10.1",
+    "chromedriver": "^138.0.4",
+    "dotenv": "^17.2.1"
   }
 }

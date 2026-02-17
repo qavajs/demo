@@ -1,4 +1,4 @@
-Feature: E-com Demo
+Feature: qavajs demo
 
 #  Test Case 1: Verify User Login
 #  Preconditions:
