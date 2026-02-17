@@ -1,6 +1,6 @@
-import { $, $$, Component } from '@qavajs/po-playwright';
+import { locator } from '@qavajs/steps-playwright/po';
 
 export default class App {
-    OpenNewWindowElectronButton = $('#electronButton');
-    CloseCurrentWindowElectronButton = $('#closeCurrentWindow');
+    OpenNewWindowElectronButton = locator('#electronButton');
+    CloseCurrentWindowElectronButton = locator('#closeCurrentWindow');
 }

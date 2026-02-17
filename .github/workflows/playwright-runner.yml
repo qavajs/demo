@@ -12,13 +12,13 @@ jobs:
         with:
           node-version: 22
       - name: install modules
-        working-directory: ./playwright-runner-v2
+        working-directory: ./playwright-runner
         run: npm ci
       - name: install playwright browsers
-        working-directory: ./playwright-runner-v2
+        working-directory: ./playwright-runner
         run: npx playwright install chromium --with-deps
       - name: execute tests
-        working-directory: ./playwright-runner-v2
+        working-directory: ./playwright-runner
         run: npm run test
       - name: report artifact
         uses: actions/upload-artifact@v4
@@ -29,5 +29,5 @@ jobs:
         uses: mikepenz/action-junit-report@v4
         if: always()
         with:
-          report_paths: playwright-runner-v2/report/report.xml
+          report_paths: playwright-runner/report/report.xml
           fail_on_failure: true
