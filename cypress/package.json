@@ -6,7 +6,8 @@
     "debug": "cypress open",
     "test": "cypress run",
     "debug:it": "cross-env MODE=it cypress open",
-    "test:it": "cross-env MODE=it cypress run"
+    "test:it": "cross-env MODE=it cypress run",
+    "serve:report": "allure generate && allure serve"
   },
   "author": "Alexandr Galichenko",
   "license": "MIT",
@@ -14,7 +15,9 @@
     "@qavajs/cypress": "^2.7.0",
     "@qavajs/cypress-runner-adapter": "^1.6.0",
     "@qavajs/memory": "^1.10.3",
+    "allure": "^3.3.1",
+    "allure-cypress": "^3.5.0",
     "cross-env": "^10.1.0",
-    "cypress": "^15.10.0"
+    "cypress": "^15.11.0"
   }
 }

@@ -4,3 +4,5 @@ apps/
 po/
 lib/
 .env
+allure-report/
+allure-results/

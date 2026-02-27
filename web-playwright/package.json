@@ -6,7 +6,8 @@
   "scripts": {
     "test": "qavajs run --config config.ts",
     "test:headless": "qavajs run --config config.ts --profile headless",
-    "test:lambdatest": "qavajs run --config config.ts --profile lambdaTest"
+    "test:lambdatest": "qavajs run --config config.ts --profile lambdaTest",
+    "serve:report": "allure generate && allure serve"
   },
   "repository": {
     "type": "git",
@@ -30,6 +31,8 @@
     "@qavajs/validation": "^1.6.1",
     "dotenv": "^17.2.4",
     "ts-node": "^10.9.2",
-    "typescript": "^5.9.3"
+    "typescript": "^5.9.3",
+    "allure": "^3.3.1",
+    "allure-cucumberjs": "^3.5.0"
   }
 }
