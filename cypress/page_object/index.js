@@ -1,4 +1,4 @@
-import { locator } from '@qavajs/cypress/lib/pageObjects';
+import { locator } from '@qavajs/cypress/po';
 
 export default class App {
     UsernameInput = locator('#user-name');

@@ -26,7 +26,8 @@ const defaultConfig = {
         ['html', 'report/report2.html'],
         ['@qavajs/html-formatter', 'report/report.html'],
         ['@qavajs/console-formatter'],
-        ['junit', 'report/report.xml']
+        ['junit', 'report/report.xml'],
+        ['allure-cucumberjs/reporter', 'allure-results/out.txt']
     ],
     memory: new Constants(),
     pageObject: new App(),
