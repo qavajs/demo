@@ -1,5 +1,5 @@
-import { defineConfig, devices } from '@playwright/test';
-import { defineCucumber, WdioOptions } from '@qavajs/playwright-wdio';
+import { defineConfig } from '@playwright/test';
+import { WdioOptions } from '@qavajs/playwright-wdio';
 
 /**
  * Read environment variables from file.
@@ -11,18 +11,15 @@ import { defineCucumber, WdioOptions } from '@qavajs/playwright-wdio';
  * See https://playwright.dev/docs/test-configuration.
  */
 export default defineConfig<WdioOptions>({
-    testDir: defineCucumber({
-        config: 'config.ts',
-        profile: 'native'
-    }),
+    testMatch: 'native.config.ts',
     /* Run tests in files in parallel */
     fullyParallel: true,
     /* Fail the build on CI if you accidentally left test.only in the source code. */
     forbidOnly: !!process.env.CI,
     /* Retry on CI only */
-    retries: process.env.CI ? 2 : 2,
+    retries: 1,
     /* Opt out of parallel tests on CI. */
-    workers: process.env.CI ? 1 : undefined,
+    workers: 1,
     /* Reporter to use. See https://playwright.dev/docs/test-reporters */
     reporter: [
         ['html', { open: 'never', outputFolder: 'report' }],
@@ -44,15 +41,7 @@ export default defineConfig<WdioOptions>({
                     port: 4723,
                     capabilities: {
                         platformName: 'iOS',
-                        'appium:platformVersion': '18.6',
-                        'appium:deviceName': 'iPhone 16 Pro',
-                        'appium:automationName': 'XCUITest',
-                        'appium:newCommandTimeout': 240,
-                        'appium:safariAllowPopups': true,
-                        'appium:safariIgnoreFraudWarning': true,
-                        'appium:safariOpenLinksInBackground': false,
-                        'appium:usePrebuiltWDA': true,
-                        'appium:shouldUseSingletonTestManager': false
+                        'appium:automationName': 'XCUITest'
                     }
                 }
             },

@@ -1,4 +1,4 @@
-Feature: E-com Demo
+Feature: Web
 
 #  Test Case 1: Verify User Login
 #  Preconditions:
@@ -12,7 +12,6 @@ Feature: E-com Demo
 #  Expected Results:
 #
 #  Verify that the text of 'App Logo' is equal to 'Swag Labs'.
-  @this
   Scenario: Verify that user is able to login
     Given I open '$app' url
     When I type 'standard_user' to 'Username Input'
