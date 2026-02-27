@@ -13,9 +13,9 @@
   "author": "Oleksandr Halichenko",
   "license": "MIT",
   "dependencies": {
-    "@qavajs/playwright-wdio": "^0.0.3",
-    "appium": "^3.1.2",
+    "@qavajs/playwright-wdio": "^1.0.0",
+    "appium": "^3.2.0",
     "typescript": "^5.9.3",
-    "appium-xcuitest-driver": "^10.12.2"
+    "appium-xcuitest-driver": "^10.24.1"
   }
 }
