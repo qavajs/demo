@@ -6,14 +6,15 @@ module.exports = defineConfig({
   e2e: {
     specPattern: 'features/**/*.feature', //path to features
     supportFile: 'support.js', //path to main support file
+    video: true,
+    chromeWebSecurity: false,
+    blockHosts: ["https://events.backtrace.io"],
     setupNodeEvents(on, config) {
       on('file:preprocessor', cucumber);
       allureCypress(on, config, {
         resultsDir: "allure-results",
       });
       return config;
-    },
-    chromeWebSecurity: false,
-    blockHosts: ["https://events.backtrace.io"]
+    }
   },
 });

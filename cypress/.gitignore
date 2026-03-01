@@ -2,3 +2,4 @@ node_modules/
 report/
 allure-report/
 allure-results/
+cypress/
