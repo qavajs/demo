@@ -25,8 +25,7 @@
     "@qavajs/html-formatter": "^1.0.0",
     "@qavajs/memory": "^1.10.3",
     "@qavajs/steps-playwright": "^2.14.1",
-    "@qavajs/validation": "^1.6.1",
-    "@qavajs/webstorm-adapter": "^8.0.0",
+    "@qavajs/validation": "^1.6.2",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.3"
   }
