@@ -13,11 +13,11 @@
   "author": "Alexandr Galichenko",
   "license": "MIT",
   "dependencies": {
-    "@qavajs/cypress": "^2.7.0",
-    "@qavajs/cypress-runner-adapter": "^1.7.0",
+    "@qavajs/cypress": "^2.8.0",
+    "@qavajs/cypress-runner-adapter": "^1.9.0",
     "@qavajs/memory": "^1.10.3",
     "allure": "^3.3.1",
-    "allure-cypress": "^3.5.0",
+    "allure-cypress": "^3.6.0",
     "cross-env": "^10.1.0",
     "cypress": "^15.11.0"
   }
