@@ -4,6 +4,6 @@ Before(function () {
     cy.session(Cypress._.uniqueId(), () => {});
 });
 
-After(function () {
-    cy.screenshot();
-});
+// After(function () {
+//     cy.screenshot();
+// });
