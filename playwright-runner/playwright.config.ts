@@ -5,7 +5,6 @@ import { defineConfig, devices } from '@playwright/test';
  * See https://playwright.dev/docs/test-configuration.
  */
 export default defineConfig({
-    testMatch: 'cucumber.config.ts',
     /* Run tests in files in parallel */
     fullyParallel: true,
     /* Fail the build on CI if you accidentally left test.only in the source code. */
@@ -30,6 +29,7 @@ export default defineConfig({
     projects: [
         {
             name: 'base',
+            testMatch: 'cucumber.config.ts',
             use: {
                 ...devices['Desktop Chrome'],
                 hasTouch: true
@@ -40,8 +40,7 @@ export default defineConfig({
             testMatch: 'ui5.config.ts',
             use: {
                 ...devices['Desktop Chrome'],
-                hasTouch: true,
-                headless: false,
+                hasTouch: true
             },
         }
     ]
