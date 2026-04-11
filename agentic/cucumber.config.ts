@@ -4,7 +4,7 @@ import App from './page_object';
 
 export default defineConfig({
   paths: [
-    'features/**/qavajs.feature'
+    'features/**/*.feature'
   ],
   require: [
     'node_modules/@qavajs/playwright/steps.js',

@@ -41,7 +41,8 @@ export default defineConfig({
             testMatch: 'cucumber.config.ts',
             use: {
                 ...devices['Desktop Chrome'],
-                hasTouch: true
+                hasTouch: true,
+                headless: false
             }
         }
     ]

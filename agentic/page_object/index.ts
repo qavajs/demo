@@ -21,6 +21,8 @@ export default class App {
   CompleteOrderHeader = locator('.complete-header');
   MenuButton = locator('button#react-burger-menu-btn');
   BurgerMenu = locator('.bm-menu').as(Menu);
+  SortDropdown = locator('.product_sort_container');
+  FirstProductName = locator('.inventory_list .inventory_item:first-child .inventory_item_name');
 }
 
 class Product {
