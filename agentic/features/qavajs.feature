@@ -158,7 +158,7 @@ Feature: Sauce Demo
     And I click 'Product (Sauce Labs Backpack) > Add To Cart'
     And I click 'Product (Sauce Labs Bike Light) > Add To Cart'
     And I click 'Cart Button'
-    Then I expect number of elements in 'Cart Items' collection to equal '21'
+    Then I expect number of elements in 'Cart Items' collection to equal '2'
     And I expect 'Cart Item (Sauce Labs Backpack)' to be visible
     And I expect 'Cart Item (Sauce Labs Bike Light)' to be visible
     When I click 'Checkout Button'
