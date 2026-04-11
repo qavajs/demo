@@ -1,0 +1,8 @@
+node_modules/
+report/
+apps/
+po/
+lib/
+test-results/
+.env
+.claude/settings.local.json
