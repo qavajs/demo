@@ -1,6 +1,6 @@
 ---
 name: run-test
-description: Run Playwright/Cucumber tests for the SauceLabs demo app. Use when the user asks to "run tests", "run a test", "execute tests", "run a scenario", or wants to trigger the test suite.
+description: Run Playwright/Cucumber tests by provided name or grep pattern. Use when the user asks to "run tests", "run a test", "execute tests", "run a scenario", or wants to trigger the test suite.
 argument-hint: scenario name or grep pattern
 allowed-tools: [Bash]
 ---
@@ -24,15 +24,9 @@ npm run test
 
 ### Specific scenario or keyword — grep by name
 ```bash
-npx playwright test --project=base --grep "<pattern>"
+npx playwright test --project=agent --grep "<pattern>"
 ```
 where `<pattern>` is the scenario name or keyword provided by the user.
-
-### Debug / interactive UI mode
-If the user says "debug", "UI mode", or "interactive":
-```bash
-npm run debug
-```
 
 ## After running
 

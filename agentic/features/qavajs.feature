@@ -149,6 +149,7 @@ Feature: Sauce Demo
 #  Verify that the text of 'Summary Total' is 'Total: $43.18'.
 #  Click on 'Finish Button'.
 #  Verify that the text of 'Complete Order Header' is 'Thank you for your order!'.
+  @agentDebug
   Scenario: Verify that user is able to checkout multiple items
     Given I open '$app' url
     When I type 'standard_user' to 'Username Input'
@@ -157,8 +158,8 @@ Feature: Sauce Demo
     And I click 'Product (Sauce Labs Backpack) > Add To Cart'
     And I click 'Product (Sauce Labs Bike Light) > Add To Cart'
     And I click 'Cart Button'
-    Then I expect number of elements in 'Cart Items' collection to equal '2'
-    And I expect 'Cart Item (Sauce Labs Backpack)' not to be visible
+    Then I expect number of elements in 'Cart Items' collection to equal '21'
+    And I expect 'Cart Item (Sauce Labs Backpack)' to be visible
     And I expect 'Cart Item (Sauce Labs Bike Light)' to be visible
     When I click 'Checkout Button'
     And I type 'John' to 'Checkout First Name'
