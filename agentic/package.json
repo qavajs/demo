@@ -11,6 +11,7 @@
   "author": "Oleksandr Halichenko",
   "license": "MIT",
   "dependencies": {
+    "@playwright/cli": "^0.1.7",
     "@qavajs/playwright": "^4.2.0",
     "@types/node": "^25.5.2",
     "dotenv": "^17.4.1",
