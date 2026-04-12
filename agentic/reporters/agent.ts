@@ -34,7 +34,7 @@ function printConsoleLogs(result: TestResult): void {
     .filter(text => text);
 
   if (logs.length > 0) {
-    console.log('  --- console output ---');
+    console.log('--- console output ---');
     console.log(logs.join(''));
   }
 }
