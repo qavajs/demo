@@ -15,9 +15,9 @@
   "dependencies": {
     "@qavajs/cypress": "^2.8.0",
     "@qavajs/cypress-runner-adapter": "^1.9.1",
-    "@qavajs/memory": "^1.10.3",
-    "allure": "^3.4.0",
-    "allure-cypress": "^3.7.0",
+    "@qavajs/memory": "^1.11.0",
+    "allure": "^3.4.1",
+    "allure-cypress": "^3.7.1",
     "cross-env": "^10.1.0",
     "cypress": "^15.13.1"
   }
