@@ -17,6 +17,10 @@ function printStep(step: TestStep, indent: number): void {
   if (step.error?.message) {
     console.log(`${prefix}  ${step.error.message}`);
   }
+
+  for (const child of step.steps) {
+    printStep(child, indent + 1);
+  }
 }
 
 /**
