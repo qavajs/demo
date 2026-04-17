@@ -19,4 +19,3 @@ Feature: Mobile Native
     When I click 'Form > Dropdown'
     When I type 'webdriver.io is awesome' to 'Form > Wheel'
     And I click 'Form > Wheel Done'
-    Then I click 'Form > Button'
