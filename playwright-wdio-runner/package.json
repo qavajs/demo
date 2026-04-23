@@ -16,6 +16,7 @@
     "@qavajs/playwright-wdio": "^1.1.0",
     "appium": "^3.3.0",
     "typescript": "^6.0.3",
-    "appium-xcuitest-driver": "^11.0.0"
+    "appium-xcuitest-driver": "^11.0.0",
+    "@qavajs/playwright-console-reporter": "^0.1.0"
   }
 }

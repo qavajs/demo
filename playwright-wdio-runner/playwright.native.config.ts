@@ -23,7 +23,8 @@ export default defineConfig<WdioOptions>({
     /* Reporter to use. See https://playwright.dev/docs/test-reporters */
     reporter: [
         ['html', { open: 'never', outputFolder: 'report' }],
-        ['junit', { outputFile: 'report/report.xml' }]
+        ['junit', { outputFile: 'report/report.xml' }],
+        ['@qavajs/playwright-console-reporter', { showOutput: true }]
     ],
     /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
     use: {
