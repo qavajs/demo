@@ -23,7 +23,8 @@ export default defineConfig<WdioOptions>({
     /* Reporter to use. See https://playwright.dev/docs/test-reporters */
     reporter: [
         ['html', { open: 'never', outputFolder: 'report' }],
-        ['junit', { outputFile: 'report/report.xml' }]
+        ['junit', { outputFile: 'report/report.xml' }],
+        ['@qavajs/playwright-console-reporter', { showOutput: true }]
     ],
     /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
     use: {
@@ -38,18 +39,18 @@ export default defineConfig<WdioOptions>({
             name: 'chrome',
             use: {},
         },
-        {
-            name: 'iosSafari',
-            use: {
-                wdioLaunchOptions: {
-                    port: 4723,
-                    capabilities: {
-                        platformName: 'iOS',
-                        'appium:automationName': 'XCUITest',
-                        'appium:browserName': 'Safari',
-                    }
-                }
-            },
-        }
+        // {
+        //     name: 'iosSafari',
+        //     use: {
+        //         wdioLaunchOptions: {
+        //             port: 4723,
+        //             capabilities: {
+        //                 platformName: 'iOS',
+        //                 'appium:automationName': 'XCUITest',
+        //                 'appium:browserName': 'Safari',
+        //             }
+        //         }
+        //     },
+        // }
     ]
 });
