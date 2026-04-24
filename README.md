@@ -21,6 +21,7 @@ Some demos have additional profiles (headless, cloud, etc.) — see the folder's
 | [web-wdio](web-wdio) | WebdriverIO | BDD web testing with WebdriverIO (CommonJS) |
 | [web-wdio-esm](web-wdio-esm) | WebdriverIO | BDD web testing with WebdriverIO (ESM) |
 | [web-wdio-typescript](web-wdio-typescript) | WebdriverIO | BDD web testing with WebdriverIO (TypeScript) |
+| [cypress](cypress) | Cypress | BDD web testing with Cypress and Allure reporting |
 
 ## Mobile
 
@@ -67,6 +68,7 @@ Some demos have additional profiles (headless, cloud, etc.) — see the folder's
 | [execute-test](execute-test) | Playwright | Test execution control and profiles |
 | [template](template) | Playwright | Validation and environment configuration |
 | [sap-ui5](sap-ui5) | Playwright | SAP UI5 application testing |
+| [agentic](agentic) | Playwright | AI agent-assisted debugging with `@playwright/cli` and aria snapshots |
 
 ## License
 
