@@ -6,6 +6,7 @@ module.exports = {
         paths: ['features/Template.feature'],
         require: [
             'node_modules/@qavajs/steps-wdio/index.js',
+            'node_modules/@qavajs/steps-memory/index.js',
             'templates/*.js'
         ],
         browser: {
