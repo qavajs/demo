@@ -20,13 +20,13 @@
   },
   "homepage": "https://github.com/qavajs/demo#readme",
   "dependencies": {
-    "@cucumber/cucumber": "^12.7.0",
-    "@qavajs/core": "^2.14.0",
+    "@cucumber/cucumber": "^12.8.2",
+    "@qavajs/core": "^2.16.0",
     "@qavajs/console-formatter": "^1.2.0",
     "@qavajs/html-formatter": "^1.2.0",
     "@qavajs/memory": "^1.11.0",
     "@qavajs/steps-wdio": "^2.14.0",
     "ts-node": "^10.9.2",
-    "typescript": "^6.0.2"
+    "typescript": "^6.0.3"
   }
 }

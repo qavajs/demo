@@ -3,7 +3,7 @@ import { Constants } from './memory';
 import { App } from './page_object'
 
 const defaultConfig = {
-    paths: ['features/*.feature'],
+    // paths: ['features/*.feature'],
     require: [
         'node_modules/@qavajs/steps-playwright/index.js'
     ],
@@ -35,7 +35,7 @@ const defaultConfig = {
     defaultTimeout: 25000
 }
 
-export const headless = {
+export const mobile = {
     ...defaultConfig,
     browser: {
         logLevel: 'warn',
@@ -43,8 +43,8 @@ export const headless = {
             page: 5000
         },
         capabilities: {
-            browserName: 'chromium',
-            headless: true
+            browserName: 'firefox',
+            headless: false,
         }
     },
 }
