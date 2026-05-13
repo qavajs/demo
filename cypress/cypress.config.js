@@ -5,7 +5,7 @@ const { allureCypress } = require('allure-cypress/reporter');
 module.exports = defineConfig({
   e2e: {
     specPattern: 'features/**/*.feature', //path to features
-    supportFile: 'support.js', //path to main support file
+    supportFile: 'support.ts', //path to main support file
     video: true,
     chromeWebSecurity: false,
     blockHosts: ["https://events.backtrace.io"],
