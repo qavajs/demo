@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Demo Counter",
+  "version": "1.0.0",
+  "description": "A simple counter extension for qavajs testing demos",
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Demo Counter"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}

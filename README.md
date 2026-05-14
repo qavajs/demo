@@ -36,6 +36,7 @@ Some demos have additional profiles (headless, cloud, etc.) — see the folder's
 | Demo | Tool | Description |
 |---|---|---|
 | [electron-playwright](electron-playwright) | Playwright | Electron desktop app testing |
+| [chrome-extension](chrome-extension) | Playwright | Chrome extension (MV3) popup testing |
 
 ## API
 

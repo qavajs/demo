@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/qavajs/demo#readme",
   "dependencies": {
-    "@cucumber/cucumber": "^12.8.1",
+    "@cucumber/cucumber": "^12.8.3",
     "@qavajs/console-formatter": "^1.2.0",
     "@qavajs/core": "^2.15.0",
     "@qavajs/html-formatter": "^1.2.0",
