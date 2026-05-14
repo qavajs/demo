@@ -1,0 +1,17 @@
+{
+  "name": "qavajs-chrome-extension",
+  "version": "1.0.0",
+  "description": "qavajs Chrome extension testing demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "debug": "playwright test --ui"
+  },
+  "author": "Oleksandr Halichenko",
+  "license": "MIT",
+  "dependencies": {
+    "@qavajs/playwright": "^4.2.1",
+    "@types/node": "^25.8.0",
+    "typescript": "^6.0.3"
+  }
+}
