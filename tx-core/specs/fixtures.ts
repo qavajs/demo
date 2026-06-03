@@ -1,8 +1,8 @@
 import { test as base, expect } from '@qavajs/tx';
-import { LoginPage } from './page_object/LoginPage';
-import { InventoryPage } from './page_object/InventoryPage';
-import { CartPage } from './page_object/CartPage';
-import { CheckoutPage } from './page_object/CheckoutPage';
+import { LoginPage } from '../page_object/LoginPage';
+import { InventoryPage } from '../page_object/InventoryPage';
+import { CartPage } from '../page_object/CartPage';
+import { CheckoutPage } from '../page_object/CheckoutPage';
 
 type AppFixtures = {
     loginPage: LoginPage;

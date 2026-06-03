@@ -10,7 +10,7 @@
     "debug": "tx --config tx.config.js"
   },
   "dependencies": {
-    "@qavajs/tx": "latest",
+    "@qavajs/tx": "^0.0.11",
     "typescript": "^6.0.3"
   }
 }

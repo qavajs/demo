@@ -1,4 +1,4 @@
-import { test, expect } from '../fixtures';
+import { test, expect } from './fixtures';
 
 test.describe('Inventory page', () => {
     test('shows 6 products after login', async ({ loginPage, inventoryPage }) => {
