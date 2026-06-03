@@ -1,0 +1,16 @@
+{
+  "name": "qavajs-tx-core",
+  "version": "1.0.0",
+  "description": "qavajs/tx framework demo with page objects and SauceDemo tests",
+  "author": "Oleksandr Halichenko",
+  "license": "MIT",
+  "scripts": {
+    "test": "tx --config tx.config.js --test",
+    "test:headless": "tx --config tx.config.js --test --profile ci",
+    "debug": "tx --config tx.config.js"
+  },
+  "dependencies": {
+    "@qavajs/tx": "latest",
+    "typescript": "^6.0.3"
+  }
+}
