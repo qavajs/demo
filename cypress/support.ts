@@ -1,4 +1,3 @@
-import 'allure-cypress';
 import defineQavajs from '@qavajs/cypress/defineQavajs';
 import '@qavajs/cypress';
 import './step_definitions/custom';

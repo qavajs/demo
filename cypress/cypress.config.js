@@ -1,6 +1,5 @@
-const { defineConfig } = require('cypress');
-const cucumber = require('@qavajs/cypress-runner-adapter/adapter');
-const { allureCypress } = require('allure-cypress/reporter');
+import { defineConfig } from 'cypress';
+import cucumber from '@qavajs/cypress-runner-adapter/adapter';
 
 module.exports = defineConfig({
   e2e: {
@@ -11,9 +10,6 @@ module.exports = defineConfig({
     blockHosts: ["https://events.backtrace.io"],
     setupNodeEvents(on, config) {
       on('file:preprocessor', cucumber);
-      allureCypress(on, config, {
-        resultsDir: "allure-results",
-      });
       return config;
     }
   },
