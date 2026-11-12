@@ -1,5 +1,5 @@
 import { defineConfig } from 'cypress';
-import cucumber from '@qavajs/cypress-runner-adapter/adapter';
+import { setupCucumber } from '@qavajs/cypress-runner-adapter/adapter';
 
 module.exports = defineConfig({
   e2e: {
@@ -9,8 +9,7 @@ module.exports = defineConfig({
     chromeWebSecurity: false,
     blockHosts: ["https://events.backtrace.io"],
     setupNodeEvents(on, config) {
-      on('file:preprocessor', cucumber);
-      return config;
+      return setupCucumber(on, config);
     }
   },
 });
