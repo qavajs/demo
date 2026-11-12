@@ -22,19 +22,19 @@
   },
   "homepage": "https://github.com/qavajs/demo#readme",
   "dependencies": {
-    "@cucumber/cucumber": "^12.1.0",
-    "@qavajs/core": "^2.5.2",
-    "@qavajs/console-formatter": "^1.0.0",
-    "@qavajs/html-formatter": "^0.18.1",
-    "@qavajs/memory": "^1.10.2",
-    "@qavajs/steps-wdio": "^2.9.0",
-    "@qavajs/validation": "^1.2.1",
+    "@cucumber/cucumber": "^13.3.0",
+    "@qavajs/core": "^2.18.1",
+    "@qavajs/console-formatter": "^1.2.1",
+    "@qavajs/html-formatter": "^1.4.0",
+    "@qavajs/memory": "^1.11.0",
+    "@qavajs/steps-wdio": "^3.0.0",
+    "@qavajs/validation": "^1.6.3",
     "@qavajs/wdio-service-adapter": "^0.0.3",
-    "@wdio/appium-service": "^9.18.4",
-    "appium": "^2.19.0",
-    "appium-xcuitest-driver": "^9.10.1",
-    "chromedriver": "^138.0.4",
-    "dotenv": "^17.2.1",
-    "start-ios-simulator": "^1.0.1"
+    "@wdio/appium-service": "^10.2.0",
+    "appium": "^3.9.0",
+    "appium-xcuitest-driver": "^12.22.8",
+    "chromedriver": "^157.0.1",
+    "dotenv": "^18.0.10",
+    "start-ios-simulator": "^2.0.0"
   }
 }
